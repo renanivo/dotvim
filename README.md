@@ -5,17 +5,9 @@ Repositório compartilhado de configuração do vim
 
 Instalação
 ----------
-Clone o projeto em .vim:
+Entre no diretório .vim e execute:
 
-    git clone git@github.com:renanivo/dotvim.git .vim
-
-Inicie os submódulos:
-
-    git submodule update --init
-
-Compile o Command-T ( mais informações em https://github.com/wincent/Command-T ):
-
-    cd bundle/Command-T/ruby/command-t && ruby exconf.rb && make
+    $ make
 
 Diretrizes
 ----------
