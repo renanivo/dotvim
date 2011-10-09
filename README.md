@@ -5,8 +5,10 @@ Repositório compartilhado de configuração do vim
 
 Instalação
 ----------
-Entre no diretório .vim e execute:
+Pelo terminal, entre na sua pasta *home* e execute:
 
+    $ git clone git://github.com/renanivo/dotvim.git .vim
+    $ cd .vim
     $ make
 
 ### Problemas conhecidos
