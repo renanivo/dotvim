@@ -48,3 +48,14 @@ Não adicione mapeamentos de teclas (:map, :imap, :vmap, etc.) ao vimrc global. 
 Receitas
 --------
 * Renan Ivo https://gist.github.com/415001
+
+Plugins Inclusos
+----------------
+
+* [Ack](https://github.com/mileszs/ack.vim)
+* [Command-T](https://github.com/wincent/Command-T)
+* [Fugitive](https://github.com/tpope/vim-fugitive)
+* [Gundo](https://github.com/sjl/gundo.vim)
+* [NERDTree](https://github.com/scrooloose/nerdtree)
+* [Tagbar](https://github.com/majutsushi/tagbar)
+* [Surround](https://github.com/tpope/vim-surround)
