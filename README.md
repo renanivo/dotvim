@@ -34,6 +34,11 @@ O ack.vim necessita do comando ack-grep. Para instalá-lo no debian / ubuntu, ex
 
 Mais informações em: https://github.com/mileszs/ack.vim#readme
 
+Atualização
+-----------
+Uma vez instalado, obtenha as últimas atualizações com o comando:
+
+    $ make update
 
 Diretrizes
 ----------

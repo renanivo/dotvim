@@ -4,3 +4,6 @@ install:
 	cd bundle/Command-T/ruby/command-t && ruby extconf.rb && make
 ubuntu: install
 	echo 'let g:ackprg="ack-grep -H --nocolor --nogroup --column"' >> ~/.vimrc
+update:
+	git pull
+	git submodule update --init
