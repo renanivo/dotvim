@@ -61,3 +61,4 @@ Plugins Inclusos
 * [NERDTree](https://github.com/scrooloose/nerdtree)
 * [Tagbar](https://github.com/majutsushi/tagbar)
 * [Surround](https://github.com/tpope/vim-surround)
+* [Rhubarb](https://github.com/tpope/vim-rhubarb)
