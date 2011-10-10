@@ -22,3 +22,6 @@
 [submodule "bundle/rhubarb"]
 	path = bundle/rhubarb
 	url = git://github.com/tpope/vim-rhubarb.git
+[submodule "bundle/php-xdebug"]
+	path = bundle/php-xdebug
+	url = git://github.com/travisj/php-xdebug-vim.git
