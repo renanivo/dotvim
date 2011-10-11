@@ -62,3 +62,4 @@ Plugins Inclusos
 * [Tagbar](https://github.com/majutsushi/tagbar)
 * [Surround](https://github.com/tpope/vim-surround)
 * [Rhubarb](https://github.com/tpope/vim-rhubarb)
+* [PHP XDebug](https://github.com/travisj/php-xdebug-vim)
