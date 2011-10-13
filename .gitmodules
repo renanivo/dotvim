@@ -25,3 +25,6 @@
 [submodule "bundle/php-xdebug"]
 	path = bundle/php-xdebug
 	url = git://github.com/travisj/php-xdebug-vim.git
+[submodule "bundle/git"]
+	path = bundle/git
+	url = https://github.com/motemen/git-vim.git
