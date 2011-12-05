@@ -1,5 +1,5 @@
 dotVIM
-=======
+======
 
 Repositório compartilhado de configuração do vim
 
@@ -64,3 +64,4 @@ Plugins Inclusos
 * [Surround](https://github.com/tpope/vim-surround)
 * [Tagbar](https://github.com/majutsushi/tagbar)
 * [PHP XDebug](https://github.com/travisj/php-xdebug-vim)
+* [Zen Coding](https://github.com/mattn/zencoding-vim)

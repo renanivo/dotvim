@@ -28,3 +28,6 @@
 [submodule "bundle/git"]
 	path = bundle/git
 	url = https://github.com/motemen/git-vim.git
+[submodule "bundle/zencoding"]
+	path = bundle/zencoding
+	url = https://github.com/mattn/zencoding-vim.git
