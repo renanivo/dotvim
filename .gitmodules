@@ -34,3 +34,6 @@
 [submodule "bundle/phpunit"]
 	path = bundle/phpunit
 	url = https://github.com/afternoon/vim-phpunit.git
+[submodule "bundle/makegreen"]
+	path = bundle/makegreen
+	url = https://renanivo@github.com/renanivo/vim-makegreen.git
