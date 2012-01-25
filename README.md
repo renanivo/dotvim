@@ -5,18 +5,18 @@ Repositório compartilhado de configuração do vim
 
 Instalação
 ----------
-Pelo terminal, entre na sua pasta *home* e execute:
+Abra um terminal e execute:
 
-    $ git clone git://github.com/renanivo/dotvim.git .vim
-    $ cd .vim
+    $ git clone git://github.com/renanivo/dotvim.git ~/.vim
+    $ cd ~/.vim
     $ make
 
 ### Problemas conhecidos
-O Ack.vim procura pelo comando *ack*, no ubuntu o nome do comando correspondente é *ack-grep*. Para corrigir isto, instale o dotVIM com o comando:
+O Ack.vim procura pelo comando *ack*, no ubuntu o nome do comando correspondente é *ack-grep*. Para corrigir isto, execute o seguinte comando após a instalação:
 
     $ make ubuntu
 
-Se você já instalou o dotVIM, adicione a seguinte linha ao seu .vimrc:
+Você também pode fazer isto manualmente, adicionando a seguinte linha ao seu .vimrc:
 
     let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
