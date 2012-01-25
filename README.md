@@ -59,6 +59,7 @@ Plugins Inclusos
 * [Fugitive](https://github.com/tpope/vim-fugitive)
 * [Git](https://github.com/motemen/git-vim)
 * [Gundo](https://github.com/sjl/gundo.vim)
+* [Javascript Syntax](https://github.com/othree/javascript-syntax.vim)
 * [MakeGreen](https://github.com/renanivo/vim-makegreen)
 * [NERDTree](https://github.com/scrooloose/nerdtree)
 * [PHP XDebug](https://github.com/travisj/php-xdebug-vim)

@@ -37,3 +37,6 @@
 [submodule "bundle/makegreen"]
 	path = bundle/makegreen
 	url = https://renanivo@github.com/renanivo/vim-makegreen.git
+[submodule "bundle/javascript-syntax"]
+	path = bundle/javascript-syntax
+	url = https://github.com/othree/javascript-syntax.vim
