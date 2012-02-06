@@ -6,6 +6,9 @@ set secure "disable unsafe commands in local .vimrc files
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
 
+" syntax highlighting
+syntax on
+
 "enable smartcase on search
 set ignorecase
 set smartcase
