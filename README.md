@@ -66,6 +66,7 @@ Plugins Inclusos
 * [PHPUnit](https://github.com/afternoon/vim-phpunit)
 * [Rhubarb](https://github.com/tpope/vim-rhubarb)
 * [Supertab](https://github.com/ervandew/supertab)
+* [Solarized](https://github.com/altercation/vim-colors-solarized)
 * [Surround](https://github.com/tpope/vim-surround)
 * [Tagbar](https://github.com/majutsushi/tagbar)
 * [Zen Coding](https://github.com/mattn/zencoding-vim)
