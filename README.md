@@ -58,6 +58,7 @@ Plugins Inclusos
 * [Command-T](https://github.com/wincent/Command-T)
 * [EasyTags](https://github.com/xolox/vim-easytags)
 * [Fugitive](https://github.com/tpope/vim-fugitive)
+* [Gist](https://github.com/mattn/gist-vim)
 * [Git](https://github.com/motemen/git-vim)
 * [Gundo](https://github.com/sjl/gundo.vim)
 * [Javascript Syntax](https://github.com/othree/javascript-syntax.vim)
