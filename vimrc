@@ -20,7 +20,9 @@ filetype plugin on
 filetype indent on
 
 "show a line on the 80th column
-set colorcolumn=80
+if exists('+colorcolumn')
+    set colorcolumn=80
+endif
 
 "statusline setup
 set statusline=%f       "tail of the filename
