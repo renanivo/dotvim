@@ -12,5 +12,6 @@ ubuntu:
 update:
 	@git pull
 	@git submodule update --init
+	@git submodule sync
 upgrade-submodules: update
 	@git submodule foreach 'git checkout master; git pull'
