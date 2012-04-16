@@ -49,3 +49,6 @@ set statusline+=%c,     "cursor column
 set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through file
 set laststatus=2
+
+"Plugin Configuration
+let g:neocomplcache_enable_at_startup = 1
