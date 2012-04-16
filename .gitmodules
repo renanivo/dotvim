@@ -55,3 +55,6 @@
 [submodule "bundle/nose"]
 	path = bundle/nose
 	url = https://github.com/lambdalisue/nose.vim.git
+[submodule "bundle/neocomplcache"]
+	path = bundle/neocomplcache
+	url = https://github.com/Shougo/neocomplcache.git
