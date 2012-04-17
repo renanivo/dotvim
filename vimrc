@@ -24,6 +24,11 @@ if exists('+colorcolumn')
     set colorcolumn=80
 endif
 
+" set the default colorscheme as solarized
+syntax enable
+set background=dark
+colorscheme solarized
+
 "statusline setup
 set statusline=%f       "tail of the filename
 
