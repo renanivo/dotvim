@@ -64,6 +64,7 @@ Plugins Inclusos
 * [Javascript Syntax](https://github.com/othree/javascript-syntax.vim)
 * [MakeGreen](https://github.com/renanivo/vim-makegreen)
 * [NERDTree](https://github.com/scrooloose/nerdtree)
+* [Nose](https://github.com/lambdalisue/nose.vim)
 * [PHP XDebug](https://github.com/travisj/php-xdebug-vim)
 * [PHPUnit](https://github.com/afternoon/vim-phpunit)
 * [Rhubarb](https://github.com/tpope/vim-rhubarb)

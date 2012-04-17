@@ -52,3 +52,6 @@
 [submodule "bundle/gist"]
 	path = bundle/gist
 	url = https://github.com/mattn/gist-vim.git
+[submodule "bundle/nose"]
+	path = bundle/nose
+	url = https://github.com/lambdalisue/nose.vim.git
