@@ -72,5 +72,6 @@ Plugins Inclusos
 * [Solarized](https://github.com/altercation/vim-colors-solarized)
 * [Surround](https://github.com/tpope/vim-surround)
 * [Tagbar](https://github.com/majutsushi/tagbar)
+* [Twig](https://github.com/beyondwords/vim-twig)
 * [Web API](https://github.com/mattn/webapi-vim)
 * [Zen Coding](https://github.com/mattn/zencoding-vim)
