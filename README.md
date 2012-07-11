@@ -68,6 +68,7 @@ Plugins Inclusos
 * [Nose](https://github.com/lambdalisue/nose.vim)
 * [PHP XDebug](https://github.com/travisj/php-xdebug-vim)
 * [PHPUnit](https://github.com/afternoon/vim-phpunit)
+* [Puppet](https://github.com/rodjek/vim-puppet/)
 * [Rhubarb](https://github.com/tpope/vim-rhubarb)
 * [Solarized](https://github.com/altercation/vim-colors-solarized)
 * [Surround](https://github.com/tpope/vim-surround)

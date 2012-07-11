@@ -61,3 +61,6 @@
 [submodule "bundle/twig"]
 	path = bundle/twig
 	url = https://github.com/beyondwords/vim-twig.git
+[submodule "bundle/puppet"]
+	path = bundle/puppet
+	url = https://github.com/rodjek/vim-puppet.git
