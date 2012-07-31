@@ -10,6 +10,9 @@ init:
 command-t:
 	@cd bundle/Command-T/ruby/command-t && ruby extconf.rb && make
 
+nose-compiler:
+	@sudo pip install git+git://github.com/nvie/nose-machineout.git#egg=nose_machineout
+
 ubuntu:
 	@echo 'let g:ackprg="ack-grep -H --nocolor --nogroup --column"' >> ~/.vimrc
 
