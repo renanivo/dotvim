@@ -64,3 +64,6 @@
 [submodule "bundle/puppet"]
 	path = bundle/puppet
 	url = https://github.com/rodjek/vim-puppet.git
+[submodule "bundle/syntatic"]
+	path = bundle/syntatic
+	url = https://github.com/scrooloose/syntastic.git
