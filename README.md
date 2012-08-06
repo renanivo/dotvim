@@ -76,3 +76,4 @@ Plugins Inclusos
 * [Twig](https://github.com/beyondwords/vim-twig)
 * [Web API](https://github.com/mattn/webapi-vim)
 * [Zen Coding](https://github.com/mattn/zencoding-vim)
+* [Syntastic](https://github.com/scrooloose/syntastic)
