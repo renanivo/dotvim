@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>dotVIM by renanivo</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>dotVIM</h1>
+          <h2>Repositório compartilhado de configurações e plugins do vim</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/renanivo/dotvim/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/renanivo/dotvim/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/renanivo/dotvim" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h2>Instalação</h2>
+
+<p>Abra um terminal e execute:</p>
+
+<pre><code>$ git clone git://github.com/renanivo/dotvim.git ~/.vim
+$ cd ~/.vim
+$ make
+</code></pre>
+
+<h3>Problemas conhecidos</h3>
+
+<p>O Ack.vim procura pelo comando <em>ack</em>, no ubuntu o nome do comando correspondente é <em>ack-grep</em>. Para corrigir isto, execute o seguinte comando após a instalação:</p>
+
+<pre><code>$ make ubuntu
+</code></pre>
+
+<p>Você também pode fazer isto manualmente, adicionando a seguinte linha ao seu .vimrc:</p>
+
+<pre><code>let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+</code></pre>
+
+<h3>Dependências</h3>
+
+<h4>Command-T</h4>
+
+<p>Para que o script de instalação possa compilar o plugin Command-T, é necessário ter o ruby instalado. No debian / ubuntu, execute:</p>
+
+<pre><code>$ sudo apt-get install ruby-dev
+</code></pre>
+
+<p>Também é necessário que seu <em>vim</em> seja compilado com suporte a ruby. Para mais informações, veja: <a href="https://github.com/wincent/Command-T#readme">https://github.com/wincent/Command-T#readme</a></p>
+
+<h4>Ack.vim</h4>
+
+<p>O ack.vim necessita do comando ack-grep. Para instalá-lo no debian / ubuntu, execute:</p>
+
+<pre><code>$ sudo apt-get install ack-grep
+</code></pre>
+
+<p>Mais informações em: <a href="https://github.com/mileszs/ack.vim#readme">https://github.com/mileszs/ack.vim#readme</a></p>
+
+<h2>Atualização</h2>
+
+<p>Uma vez instalado, obtenha as últimas atualizações com o comando:</p>
+
+<pre><code>$ make update
+</code></pre>
+
+<h2>Diretrizes</h2>
+
+<p>Não adicione mapeamentos de teclas (:map, :imap, :vmap, etc.) ao vimrc global. Isto evita conflitos de mapeamentos entre os usuários do projeto. Se você criou mapeamentos, ou configurações, que são mais cômodas para você e podem interessar a outros, adicione na seção <strong>Receitas</strong></p>
+
+<h2>Receitas</h2>
+
+<ul>
+<li>Renan Ivo <a href="https://gist.github.com/415001">https://gist.github.com/415001</a>
+</li>
+</ul><h2>Plugins Inclusos</h2>
+
+<ul>
+<li><a href="https://github.com/mileszs/ack.vim">Ack</a></li>
+<li><a href="https://github.com/wincent/Command-T">Command-T</a></li>
+<li><a href="https://github.com/xolox/vim-easytags">EasyTags</a></li>
+<li><a href="https://github.com/tpope/vim-fugitive">Fugitive</a></li>
+<li><a href="https://github.com/mattn/gist-vim">Gist</a></li>
+<li><a href="https://github.com/motemen/git-vim">Git</a></li>
+<li><a href="https://github.com/sjl/gundo.vim">Gundo</a></li>
+<li><a href="https://github.com/othree/javascript-syntax.vim">Javascript Syntax</a></li>
+<li><a href="https://github.com/renanivo/vim-makegreen">MakeGreen</a></li>
+<li><a href="https://github.com/Shougo/neocomplcache">Neocomplcache</a></li>
+<li><a href="https://github.com/scrooloose/nerdtree">NERDTree</a></li>
+<li><a href="https://github.com/lambdalisue/nose.vim">Nose</a></li>
+<li><a href="https://github.com/travisj/php-xdebug-vim">PHP XDebug</a></li>
+<li><a href="https://github.com/afternoon/vim-phpunit">PHPUnit</a></li>
+<li><a href="https://github.com/tpope/vim-rhubarb">Rhubarb</a></li>
+<li><a href="https://github.com/altercation/vim-colors-solarized">Solarized</a></li>
+<li><a href="https://github.com/tpope/vim-surround">Surround</a></li>
+<li><a href="https://github.com/majutsushi/tagbar">Tagbar</a></li>
+<li><a href="https://github.com/mattn/webapi-vim">Web API</a></li>
+<li><a href="https://github.com/mattn/zencoding-vim">Zen Coding</a></li>
+</ul>
+        </section>
+
+        <footer>
+          dotVIM is maintained by <a href="https://github.com/renanivo">renanivo</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
