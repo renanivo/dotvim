@@ -66,7 +66,6 @@ Plugins Inclusos
 * [Neocomplcache](https://github.com/Shougo/neocomplcache)
 * [NERDTree](https://github.com/scrooloose/nerdtree)
 * [Nose](https://github.com/lambdalisue/nose.vim)
-* [PHP XDebug](https://github.com/travisj/php-xdebug-vim)
 * [PHPUnit](https://github.com/afternoon/vim-phpunit)
 * [Puppet](https://github.com/rodjek/vim-puppet/)
 * [Rhubarb](https://github.com/tpope/vim-rhubarb)
@@ -76,3 +75,4 @@ Plugins Inclusos
 * [Twig](https://github.com/beyondwords/vim-twig)
 * [Web API](https://github.com/mattn/webapi-vim)
 * [Zen Coding](https://github.com/mattn/zencoding-vim)
+* [Syntastic](https://github.com/scrooloose/syntastic)
