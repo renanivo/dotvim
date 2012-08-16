@@ -65,6 +65,7 @@ Plugins Inclusos
 * [MakeGreen](https://github.com/renanivo/vim-makegreen)
 * [Neocomplcache](https://github.com/Shougo/neocomplcache)
 * [NERDTree](https://github.com/scrooloose/nerdtree)
+* [Nginx](https://github.com/vim-scripts/nginx.vim)
 * [Nose](https://github.com/lambdalisue/nose.vim)
 * [PHPUnit](https://github.com/afternoon/vim-phpunit)
 * [Paredit](https://github.com/vim-scripts/paredit.vim)
