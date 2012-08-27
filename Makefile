@@ -13,6 +13,10 @@ command-t:
 nose-compiler:
 	@sudo pip install git+git://github.com/nvie/nose-machineout.git#egg=nose_machineout
 
+instant-markdown:
+	sudo gem install redcarpet pygments.rb
+	npm -g install instant-markdown-d
+
 ubuntu:
 	@echo 'let g:ackprg="ack-grep -H --nocolor --nogroup --column"' >> ~/.vimrc
 
