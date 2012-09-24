@@ -29,6 +29,9 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" Terminal colors
+set t_Co=256
+
 "statusline setup
 set statusline=%f       "tail of the filename
 
