@@ -24,6 +24,9 @@ if exists('+colorcolumn')
     set colorcolumn=80
 endif
 
+" cursor line
+set cursorline
+
 " set the default colorscheme as solarized
 syntax enable
 set background=dark
