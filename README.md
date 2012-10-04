@@ -53,7 +53,13 @@ Não adicione mapeamentos de teclas (:map, :imap, :vmap, etc.) ao vimrc global. 
 
 Receitas
 --------
-* Renan Ivo https://gist.github.com/415001
+
+### .vimrc's
+* [Eher](https://gist.github.com/1698770)
+* [Renan Ivo](https://gist.github.com/415001)
+
+### Atalhos
+* [Autocomplete com tabs no neocomplcache](https://gist.github.com/2406907)
 
 Plugins Inclusos
 ----------------
