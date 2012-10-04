@@ -36,6 +36,10 @@ O ack.vim necessita do comando ack-grep. Para instalá-lo no debian / ubuntu, ex
 
 Mais informações em: https://github.com/mileszs/ack.vim#readme
 
+#### Powerline
+
+Para utilizar os [fancy symbols](https://github.com/Lokaltog/vim-powerline#troubleshooting) da Powerline, é necessário que você instale fontes compatíveis. Você pode encontrar algumas na [wiki da Powerline](https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts).
+
 Atualização
 -----------
 Uma vez instalado, obtenha as últimas atualizações com o comando:
