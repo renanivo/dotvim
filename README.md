@@ -78,5 +78,6 @@ Plugins Inclusos
 * [Syntastic](https://github.com/scrooloose/syntastic)
 * [Tagbar](https://github.com/majutsushi/tagbar)
 * [Twig](https://github.com/beyondwords/vim-twig)
+* [VirtualEnv](https://github.com/jmcantrell/vim-virtualenv)
 * [Web API](https://github.com/mattn/webapi-vim)
 * [Zen Coding](https://github.com/mattn/zencoding-vim)
