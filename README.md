@@ -42,11 +42,6 @@ Uma vez instalado, obtenha as últimas atualizações com o comando:
 
     $ make update
 
-Diretrizes
-----------
-
-Não adicione mapeamentos de teclas (:map, :imap, :vmap, etc.) ao vimrc global. Isto evita conflitos de mapeamentos entre os usuários do projeto. Se você criou mapeamentos, ou configurações, que são mais cômodas para você e podem interessar a outros, adicione na seção **Receitas**
-
 Receitas
 --------
 * Renan Ivo https://gist.github.com/415001
