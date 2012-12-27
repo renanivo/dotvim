@@ -32,6 +32,12 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" To make Omni-Completion tip window to close when a selection is
+" made, these lines close it on movement in insert mode or when leaving
+" insert mode
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
 " Terminal colors
 set t_Co=256
 
