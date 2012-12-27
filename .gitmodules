@@ -79,3 +79,6 @@
 [submodule "bundle/virtualenv"]
 	path = bundle/virtualenv
 	url = git://github.com/jmcantrell/vim-virtualenv.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = git://github.com/msanders/snipmate.vim.git

@@ -68,6 +68,7 @@ Plugins Inclusos
 * [Powerline](https://github.com/Lokaltog/vim-powerline)
 * [Puppet](https://github.com/rodjek/vim-puppet/)
 * [Rhubarb](https://github.com/tpope/vim-rhubarb)
+* [Snipmate](https://github.com/msanders/snipmate.vim)
 * [Solarized](https://github.com/altercation/vim-colors-solarized)
 * [Surround](https://github.com/tpope/vim-surround)
 * [Syntastic](https://github.com/scrooloose/syntastic)
