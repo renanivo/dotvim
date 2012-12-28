@@ -3,43 +3,33 @@ call pathogen#infect()
 set exrc   "enable per-directory .vimrc files
 set secure "disable unsafe commands in local .vimrc files
 
-set incsearch   "find the next match as we type the search
-set hlsearch    "hilight searches by default
+" Usability {{{
+    syntax on
+    filetype plugin on
+    filetype indent on
 
-" syntax highlighting
-syntax on
+    "search
+    set ignorecase
+    set smartcase
+    set incsearch   "find the next match as we type the search
+    set hlsearch    "hilight searches by default
 
-"enable smartcase on search
-set ignorecase
-set smartcase
 
-set number "enable line numbers
-
-"load ftplugins and indent files
-filetype plugin on
-filetype indent on
-
-"show a line on the 80th column
-if exists('+colorcolumn')
+    set number "enable line numbers
     set colorcolumn=80
-endif
+    set cursorline
 
-" cursor line
-set cursorline
+    " set the default colorscheme as solarized
+    set t_Co=256 " Terminal colors
+    set background=dark
+    colorscheme solarized
 
-" set the default colorscheme as solarized
-syntax enable
-set background=dark
-colorscheme solarized
-
-" To make Omni-Completion tip window to close when a selection is
-" made, these lines close it on movement in insert mode or when leaving
-" insert mode
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-
-" Terminal colors
-set t_Co=256
+    " To make Omni-Completion tip window to close when a selection is
+    " made, these lines close it on movement in insert mode or when leaving
+    " insert mode
+    autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+    autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+" }}}
 
 " Status Line {{{
 if !exists('g:Powerline_loaded')
@@ -72,5 +62,6 @@ if !exists('g:Powerline_loaded')
 endif
 " }}}
 
-"Plugin Configuration
+" Plugin Configuration {{{
 let g:neocomplcache_enable_at_startup = 1
+" }}}
