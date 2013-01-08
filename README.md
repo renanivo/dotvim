@@ -46,11 +46,6 @@ Uma vez instalado, obtenha as últimas atualizações com o comando:
 
     $ make update
 
-Diretrizes
-----------
-
-Não adicione mapeamentos de teclas (:map, :imap, :vmap, etc.) ao vimrc global. Isto evita conflitos de mapeamentos entre os usuários do projeto. Se você criou mapeamentos, ou configurações, que são mais cômodas para você e podem interessar a outros, adicione na seção **Receitas**
-
 Receitas
 --------
 
@@ -83,10 +78,12 @@ Plugins Inclusos
 * [Powerline](https://github.com/Lokaltog/vim-powerline)
 * [Puppet](https://github.com/rodjek/vim-puppet/)
 * [Rhubarb](https://github.com/tpope/vim-rhubarb)
+* [Snipmate](https://github.com/msanders/snipmate.vim)
 * [Solarized](https://github.com/altercation/vim-colors-solarized)
 * [Surround](https://github.com/tpope/vim-surround)
 * [Syntastic](https://github.com/scrooloose/syntastic)
 * [Tagbar](https://github.com/majutsushi/tagbar)
 * [Twig](https://github.com/beyondwords/vim-twig)
+* [VirtualEnv](https://github.com/jmcantrell/vim-virtualenv)
 * [Web API](https://github.com/mattn/webapi-vim)
 * [Zen Coding](https://github.com/mattn/zencoding-vim)

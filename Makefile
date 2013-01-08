@@ -27,6 +27,7 @@ update:
 
 upgrade-submodules: update
 	@git submodule foreach 'git checkout master; git pull'
+	@cd bundle/powerline/; git checkout develop; git pull;
 
 unstable:
 	@git checkout unstable > /dev/null
