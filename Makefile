@@ -7,6 +7,7 @@ install: submodules vundle command-t
 
 submodules:
 	@git submodule update --init
+	@git submodule sync
 
 vundle:
 	@vim +BundleInstall +qa
@@ -24,10 +25,10 @@ instant-markdown:
 ubuntu:
 	@echo 'let g:ackprg="ack-grep -H --nocolor --nogroup --column"' >> ~/.vimrc
 
-update:
-	@git pull
-	@git submodule update --init
-	@git submodule sync
+pull:
+	git pull
+
+update: pull submodules vundle
 
 upgrade-submodules: update
 	@git submodule foreach 'git checkout master; git pull'
