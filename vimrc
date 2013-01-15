@@ -1,15 +1,13 @@
 " Baseline {{{
     set nocompatible
-    set filetype off
+    filetype off
     call pathogen#infect()
 
     set exrc   "enable per-directory .vimrc files
     set secure "disable unsafe commands in local .vimrc files
 
     if !exists('g:dotVim_started')
-        syntax on
-        filetype plugin on
-        filetype indent on
+        syntax enable
 
         set t_Co=256 " Terminal colors
         set background=dark
