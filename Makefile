@@ -1,11 +1,15 @@
-install: init command-t
+install: submodules vundle command-t
 	@printf "\n"
 	@echo "dotVIM instalado com sucesso!"
+	@echo "por favor, adicione o seguinte ao seu ~/.vimrc :"
+	@echo "source ~/.vim/vimrc"
 	@printf "\n"
 
-init:
+submodules:
 	@git submodule update --init
-	@echo "source ~/.vim/vimrc" >> ~/.vimrc
+
+vundle:
+	@vim +BundleInstall +qa
 
 command-t:
 	@cd bundle/Command-T/ruby/command-t && ruby extconf.rb && make
