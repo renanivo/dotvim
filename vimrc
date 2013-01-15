@@ -12,6 +12,7 @@
 " }}}
 
 " Plugins {{{
+    Bundle 'tpope/vim-sensible'
     Bundle 'scrooloose/nerdtree'
     Bundle 'wincent/Command-T'
     Bundle 'mileszs/ack.vim'
@@ -48,6 +49,8 @@
     set t_Co=256
     set background=dark
     colorscheme solarized
+
+    set list
 
     "search
     set ignorecase
