@@ -1,4 +1,6 @@
 " Baseline {{{
+    set nocompatible
+    set filetype off
     call pathogen#infect()
 
     set exrc   "enable per-directory .vimrc files
