@@ -1,23 +1,54 @@
 " Baseline {{{
     set nocompatible
     filetype off
-    call pathogen#infect()
 
-    set exrc   "enable per-directory .vimrc files
-    set secure "disable unsafe commands in local .vimrc files
+    set rtp+=~/.vim/bundle/vundle/
+    call vundle#rc()
 
-    if !exists('g:dotVim_started')
-        syntax enable
+    Bundle 'gmarik/vundle'
 
-        set t_Co=256 " Terminal colors
-        set background=dark
-        colorscheme solarized
-    endif
+    set exrc
+    set secure
+" }}}
 
-    let g:dotVim_started = 1
+" Plugins {{{
+    Bundle 'scrooloose/nerdtree'
+    Bundle 'wincent/Command-T'
+    Bundle 'mileszs/ack.vim'
+    Bundle 'tpope/vim-surround'
+    Bundle 'sjl/gundo.vim'
+    Bundle 'tpope/vim-fugitive'
+    Bundle 'majutsushi/tagbar'
+    Bundle 'tpope/vim-rhubarb'
+    Bundle 'motemen/git-vim'
+    Bundle 'mattn/zencoding-vim'
+    Bundle 'afternoon/vim-phpunit'
+    Bundle 'renanivo/vim-makegreen'
+    Bundle 'othree/javascript-syntax'
+    Bundle 'altercation/vim-colors-solarized'
+    Bundle 'xolox/vim-easytags'
+    Bundle 'mattn/gist-vim'
+    Bundle 'lambdalisue/nose.vim'
+    Bundle 'Shougo/neocomplcache'
+    Bundle 'mattn/webapi-vim'
+    Bundle 'beyondwords/vim-twig'
+    Bundle 'rodjek/vim-puppet'
+    Bundle 'scrooloose/syntastic'
+    Bundle 'vim-scripts/paredit.vim'
+    Bundle 'vim-scripts/nginx.vim'
+    Bundle 'suan/vim-instant-markdown'
+    Bundle 'Lokaltog/vim-powerline'
+    Bundle 'jmcantrell/vim-virtualenv'
+    Bundle 'msanders/snipmate.vim'
 " }}}
 
 " Usability {{{
+    syntax enable
+
+    set t_Co=256
+    set background=dark
+    colorscheme solarized
+
     "search
     set ignorecase
     set smartcase
