@@ -14,7 +14,7 @@
 " Plugins {{{
     Bundle 'tpope/vim-sensible'
     Bundle 'scrooloose/nerdtree'
-    Bundle 'wincent/Command-T'
+    Bundle 'kien/ctrlp.vim'
     Bundle 'mileszs/ack.vim'
     Bundle 'tpope/vim-surround'
     Bundle 'sjl/gundo.vim'
