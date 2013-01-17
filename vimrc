@@ -38,7 +38,7 @@
     Bundle 'vim-scripts/paredit.vim'
     Bundle 'vim-scripts/nginx.vim'
     Bundle 'suan/vim-instant-markdown'
-    Bundle 'Lokaltog/vim-powerline'
+    Bundle 'renanivo/vim-powerline'
     Bundle 'jmcantrell/vim-virtualenv'
     Bundle 'msanders/snipmate.vim'
 " }}}
