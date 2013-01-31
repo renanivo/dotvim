@@ -40,6 +40,8 @@ Bundle 'suan/vim-instant-markdown'
 Bundle 'renanivo/vim-powerline'
 Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'msanders/snipmate.vim'
+Bundle 'spf13/PIV'
+Bundle 'shawncplus/phpcomplete.vim'
 
 " Usability
 syntax enable
@@ -98,3 +100,4 @@ endif
 
 " Plugin Configuration
 let g:neocomplcache_enable_at_startup = 1
+let g:DisableAutoPHPFolding = 1

@@ -90,6 +90,8 @@ Plugins Inclusos
 * [Nose](https://github.com/lambdalisue/nose.vim)
 * [PHPUnit](https://github.com/afternoon/vim-phpunit)
 * [Paredit](https://github.com/vim-scripts/paredit.vim)
+* [PHP Complete](https://github.com/shawncplus/phpcomplete.vim)
+* [PIV](https://github.com/spf13/PIV)
 * [Powerline](https://github.com/Lokaltog/vim-powerline)
 * [Puppet](https://github.com/rodjek/vim-puppet/)
 * [Rhubarb](https://github.com/tpope/vim-rhubarb)
