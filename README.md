@@ -7,44 +7,58 @@ Instalação
 ----------
 Abra um terminal e execute:
 
-    $ git clone git://github.com/renanivo/dotvim.git ~/.vim
-    $ cd ~/.vim
-    $ make
+    git clone git://github.com/renanivo/dotvim.git ~/.vim
+    cd ~/.vim
+    make
+
 
 ### Problemas conhecidos
 O Ack.vim procura pelo comando *ack*, no ubuntu o nome do comando correspondente é *ack-grep*. Para corrigir isto, execute o seguinte comando após a instalação:
 
-    $ make ubuntu
+    make ubuntu
 
 Você também pode fazer isto manualmente, adicionando a seguinte linha ao seu .vimrc:
 
     let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
+
 ### Dependências
 
-#### Command-T
-Para que o script de instalação possa compilar o plugin Command-T, é necessário ter o ruby instalado. No debian / ubuntu, execute:
-
-    $ sudo apt-get install ruby-dev
-
-Também é necessário que seu *vim* seja compilado com suporte a ruby. Para mais informações, veja: https://github.com/wincent/Command-T#readme
-
 #### Ack.vim
+
 O ack.vim necessita do comando ack-grep. Para instalá-lo no debian / ubuntu, execute:
 
-    $ sudo apt-get install ack-grep
+    sudo apt-get install ack-grep
 
 Mais informações em: https://github.com/mileszs/ack.vim#readme
+
+
+#### Instant Markdown
+
+Este plugin tem dependências que precisam ser instaladas via ruby gems e NPM. Certifique-se de que tem ambos instalados e execute:
+
+    make instant-markdown
+
+
+#### Nose Compiler
+
+O [compiler](http://vimdoc.sourceforge.net/htmldoc/quickfix.html#quickfix.txt) para o [nose](https://nose.readthedocs.org/en/latest/) (Python) necessita de uma dependência extra, se você pretende rodar os testes do seu código Python no vim usando o comando :make, execute:
+
+    make nose-compiler
+
 
 #### Powerline
 
 Para utilizar os [fancy symbols](https://github.com/Lokaltog/vim-powerline#troubleshooting) da Powerline, é necessário que você instale fontes compatíveis. Você pode encontrar algumas na [wiki da Powerline](https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts).
 
+
 Atualização
 -----------
+
 Uma vez instalado, obtenha as últimas atualizações com o comando:
 
-    $ make update
+    make update
+
 
 Receitas
 --------
@@ -55,6 +69,7 @@ Receitas
 
 ### Atalhos
 * [Autocomplete com tabs no neocomplcache](https://gist.github.com/2406907)
+
 
 Plugins Inclusos
 ----------------

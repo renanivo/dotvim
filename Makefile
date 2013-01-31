@@ -1,4 +1,4 @@
-install: submodules vundle command-t
+install: submodules vundle
 	@printf "\n"
 	@echo "dotVIM instalado com sucesso!"
 	@echo "por favor, adicione o seguinte ao seu ~/.vimrc :"
@@ -11,9 +11,6 @@ submodules:
 
 vundle:
 	@vim +BundleInstall +qa
-
-command-t:
-	@cd bundle/Command-T/ruby/command-t && ruby extconf.rb && make
 
 nose-compiler:
 	@sudo pip install git+git://github.com/nvie/nose-machineout.git#egg=nose_machineout
