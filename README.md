@@ -75,7 +75,6 @@ Plugins Inclusos
 ----------------
 
 * [Ack](https://github.com/mileszs/ack.vim)
-* [Command-T](https://github.com/wincent/Command-T)
 * [EasyTags](https://github.com/xolox/vim-easytags)
 * [Fugitive](https://github.com/tpope/vim-fugitive)
 * [Gist](https://github.com/mattn/gist-vim)
