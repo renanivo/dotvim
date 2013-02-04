@@ -41,7 +41,6 @@ Bundle 'renanivo/vim-powerline'
 Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'msanders/snipmate.vim'
 Bundle 'spf13/PIV'
-Bundle 'shawncplus/phpcomplete.vim'
 
 " Usability
 syntax enable
