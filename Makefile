@@ -1,4 +1,10 @@
-install: submodules vundle
+ifeq ($(shell UNAME), 'Linux')
+	CACHE_FOLDER := ~/.local/share/vim
+else
+	CACHE_FOLDER := ~/Library/Vim
+endif
+
+install: submodules vundle cache-dirs
 	@printf "\n"
 	@echo "dotVIM instalado com sucesso!"
 	@echo "por favor, adicione o seguinte ao seu ~/.vimrc :"
@@ -21,6 +27,16 @@ instant-markdown:
 
 ubuntu:
 	@echo 'let g:ackprg="ack-grep -H --nocolor --nogroup --column"' >> ~/.vimrc
+
+cache-dirs:
+	@mkdir -p $(CACHE_FOLDER)/backup/
+	@mkdir -p $(CACHE_FOLDER)/swap/
+	@mkdir -p $(CACHE_FOLDER)/undo/
+
+cache-clear:
+	@rm -rf $(CACHE_FOLDER)/backup/*
+	@rm -rf $(CACHE_FOLDER)/swap/*
+	@rm -rf $(CACHE_FOLDER)/undo/*
 
 pull:
 	git pull
