@@ -32,16 +32,16 @@
 
 <p>Abra um terminal e execute:</p>
 
-<pre><code>$ git clone git://github.com/renanivo/dotvim.git ~/.vim
-$ cd ~/.vim
-$ make
+<pre><code>git clone git://github.com/renanivo/dotvim.git ~/.vim
+cd ~/.vim
+make
 </code></pre>
 
 <h3>Problemas conhecidos</h3>
 
 <p>O Ack.vim procura pelo comando <em>ack</em>, no ubuntu o nome do comando correspondente é <em>ack-grep</em>. Para corrigir isto, execute o seguinte comando após a instalação:</p>
 
-<pre><code>$ make ubuntu
+<pre><code>make ubuntu
 </code></pre>
 
 <p>Você também pode fazer isto manualmente, adicionando a seguinte linha ao seu .vimrc:</p>
@@ -51,23 +51,28 @@ $ make
 
 <h3>Dependências</h3>
 
-<h4>Command-T</h4>
-
-<p>Para que o script de instalação possa compilar o plugin Command-T, é necessário ter o ruby instalado. No debian / ubuntu, execute:</p>
-
-<pre><code>$ sudo apt-get install ruby-dev
-</code></pre>
-
-<p>Também é necessário que seu <em>vim</em> seja compilado com suporte a ruby. Para mais informações, veja: <a href="https://github.com/wincent/Command-T#readme">https://github.com/wincent/Command-T#readme</a></p>
-
 <h4>Ack.vim</h4>
 
 <p>O ack.vim necessita do comando ack-grep. Para instalá-lo no debian / ubuntu, execute:</p>
 
-<pre><code>$ sudo apt-get install ack-grep
+<pre><code>sudo apt-get install ack-grep
 </code></pre>
 
 <p>Mais informações em: <a href="https://github.com/mileszs/ack.vim#readme">https://github.com/mileszs/ack.vim#readme</a></p>
+
+<h4>Instant Markdown</h4>
+
+<p>Este plugin tem dependências que precisam ser instaladas via ruby gems e NPM. Certifique-se de que tem ambos instalados e execute:</p>
+
+<pre><code>make instant-markdown
+</code></pre>
+
+<h4>Nose Compiler</h4>
+
+<p>O <a href="http://vimdoc.sourceforge.net/htmldoc/quickfix.html#quickfix.txt">compiler</a> para o <a href="https://nose.readthedocs.org/en/latest/">nose</a> (Python) necessita de uma dependência extra, se você pretende rodar os testes do seu código Python no vim usando o comando :make, execute:</p>
+
+<pre><code>make nose-compiler
+</code></pre>
 
 <h4>Powerline</h4>
 
@@ -77,8 +82,10 @@ $ make
 
 <p>Uma vez instalado, obtenha as últimas atualizações com o comando:</p>
 
-<pre><code>$ make update
+<pre><code>make update
 </code></pre>
+
+<p><strong>atualização de 05/02/2012</strong>: Pelo dotVIM ter migrado o gerenciamento de plugins do <em>Pathogen</em> para o <em>Vundle</em>, o comando <code>make update</code> pode não funcionar como o esperado na primeira vez. Se isto acontecer, simplesmente execute o comando novamente.</p>
 
 <h2>Receitas</h2>
 
@@ -95,7 +102,6 @@ $ make
 
 <ul>
 <li><a href="https://github.com/mileszs/ack.vim">Ack</a></li>
-<li><a href="https://github.com/wincent/Command-T">Command-T</a></li>
 <li><a href="https://github.com/xolox/vim-easytags">EasyTags</a></li>
 <li><a href="https://github.com/tpope/vim-fugitive">Fugitive</a></li>
 <li><a href="https://github.com/mattn/gist-vim">Gist</a></li>
@@ -106,12 +112,14 @@ $ make
 <li><a href="https://github.com/renanivo/vim-makegreen">MakeGreen</a></li>
 <li><a href="https://github.com/Shougo/neocomplcache">Neocomplcache</a></li>
 <li><a href="https://github.com/scrooloose/nerdtree">NERDTree</a></li>
-<li><a href="https://github.com/vim-scripts/nginx.vim">Nginx</a></li>
-<li><a href="https://github.com/lambdalisue/nose.vim">Nose</a></li>
+<li><a href="https://github.com/vim-scripts/nginx.vim">Nginx Config Syntax</a></li>
+<li><a href="https://github.com/lambdalisue/nose.vim">Nose Compiler</a></li>
 <li><a href="https://github.com/afternoon/vim-phpunit">PHPUnit</a></li>
 <li><a href="https://github.com/vim-scripts/paredit.vim">Paredit</a></li>
+<li><a href="https://github.com/shawncplus/phpcomplete.vim">PHP Complete</a></li>
+<li><a href="https://github.com/spf13/PIV">PIV</a></li>
 <li><a href="https://github.com/Lokaltog/vim-powerline">Powerline</a></li>
-<li><a href="https://github.com/rodjek/vim-puppet/">Puppet</a></li>
+<li><a href="https://github.com/rodjek/vim-puppet/">Puppet Config Syntax</a></li>
 <li><a href="https://github.com/tpope/vim-rhubarb">Rhubarb</a></li>
 <li><a href="https://github.com/msanders/snipmate.vim">Snipmate</a></li>
 <li><a href="https://github.com/altercation/vim-colors-solarized">Solarized</a></li>
