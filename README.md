@@ -60,6 +60,8 @@ Uma vez instalado, obtenha as últimas atualizações com o comando:
     make update
 
 
+**atualização de 05/02/2012**: Pelo dotVIM ter migrado o gerenciamento de plugins do *Pathogen* para o *Vundle*, o comando `make update` pode não funcionar como o esperado na primeira vez. Se isto acontecer, simplesmente execute o comando novamente.
+
 Receitas
 --------
 
