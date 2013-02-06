@@ -45,16 +45,15 @@ update: pull submodules vundle
 
 upgrade-submodules: update
 	@git submodule foreach 'git checkout master; git pull'
-	@cd bundle/powerline/; git checkout develop; git pull;
 
-unstable:
-	@git checkout unstable > /dev/null
-	@git submodule sync > /dev/null
-	@git submodule update --init > /dev/null
+go-stable:
+	@git checkout master
+
+go-unstable:
+	@git checkout unstable
+
+unstable: go-unstable update
 	@echo "\ndotVIM unstable - Coisas podem falhar aqui\n"
 
-stable:
-	@git checkout master > /dev/null
-	@git submodule sync > /dev/null
-	@git submodule update --init > /dev/null
+stable: go-stable update
 	@echo "\ndotVIM stable - Está tudo bem"
