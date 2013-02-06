@@ -43,11 +43,15 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'spf13/PIV'
 
 " Usability
-syntax enable
+if !exists('g:dotvim_loaded')
+    syntax enable
 
-set t_Co=256
-set background=dark
-colorscheme solarized
+    set t_Co=256
+    set background=dark
+    colorscheme solarized
+
+    let g:dotvim_loaded = 1
+endif
 
 set list
 
