@@ -97,7 +97,7 @@ if !exists('g:Powerline_loaded')
     set laststatus=2
 endif
 
-function s:disable_php_folds()
+function! s:disable_php_folds()
     if get(g:, 'DisableAutoPHPFolding', 0)
         normal zR
     endif
