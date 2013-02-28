@@ -10,6 +10,7 @@ Abra um terminal e execute:
     git clone git://github.com/renanivo/dotvim.git ~/.vim
     cd ~/.vim
     make
+    echo "source ~/.vim/vimrc" >> ~/.vimrc
 
 
 ### Problemas conhecidos
@@ -85,6 +86,7 @@ Plugins Inclusos
 * [Instant Markdown](https://github.com/suan/vim-instant-markdown)
 * [Javascript Syntax](https://github.com/othree/javascript-syntax.vim)
 * [MakeGreen](https://github.com/renanivo/vim-makegreen)
+* [Matchit](https://github.com/tsaleh/vim-matchit)
 * [Neocomplcache](https://github.com/Shougo/neocomplcache)
 * [NERDTree](https://github.com/scrooloose/nerdtree)
 * [Nginx Config Syntax](https://github.com/vim-scripts/nginx.vim)

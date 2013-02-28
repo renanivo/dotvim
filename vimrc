@@ -41,6 +41,7 @@ Bundle 'renanivo/vim-powerline'
 Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'msanders/snipmate.vim'
 Bundle 'spf13/PIV'
+Bundle 'tsaleh/vim-matchit'
 
 " Usability
 if !exists('g:dotvim_loaded')
