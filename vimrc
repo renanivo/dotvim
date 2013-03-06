@@ -42,6 +42,7 @@ Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'msanders/snipmate.vim'
 Bundle 'spf13/PIV'
 Bundle 'tsaleh/vim-matchit'
+Bundle 'vim-scripts/wombat256.vim'
 
 " Usability
 if !exists('g:dotvim_loaded')
