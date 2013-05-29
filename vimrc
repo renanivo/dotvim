@@ -123,15 +123,13 @@ function! s:disable_php_folds()
     endif
 endfunction
 
-let g:neocomplcache_enable_at_startup = 1
-let g:DisableAutoPHPFolding = 1
 autocmd Syntax php call s:disable_php_folds()
 
-" Easy tags
 let s:dir = has('win32') ? '$APPDATA/Vim' : match(system('uname'), "Darwin") > -1 ? '~/Library/Vim' : empty($XDG_DATA_HOME) ? '~/.local/share/vim' : '$XDG_DATA_HOME/vim'
-let g:easytags_by_filetype = expand(s:dir) . '/tags//'
 
-" Instant Markdown
+let g:neocomplcache_enable_at_startup = 1
+let g:DisableAutoPHPFolding = 1
+let g:easytags_by_filetype = expand(s:dir) . '/tags//'
 let g:instant_markdown_slow = 1
 
 " }}}
