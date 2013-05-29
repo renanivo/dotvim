@@ -131,4 +131,7 @@ autocmd Syntax php call s:disable_php_folds()
 let s:dir = has('win32') ? '$APPDATA/Vim' : match(system('uname'), "Darwin") > -1 ? '~/Library/Vim' : empty($XDG_DATA_HOME) ? '~/.local/share/vim' : '$XDG_DATA_HOME/vim'
 let g:easytags_by_filetype = expand(s:dir) . '/tags//'
 
+" Instant Markdown
+let g:instant_markdown_slow = 1
+
 " }}}
