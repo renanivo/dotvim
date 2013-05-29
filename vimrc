@@ -1,4 +1,5 @@
-" Baseline
+" Baseline {{{
+
 set nocompatible
 filetype off
 
@@ -10,7 +11,10 @@ Bundle 'gmarik/vundle'
 set exrc
 set secure
 
-" Plugins
+" }}}
+
+" Plugins {{{
+
 Bundle 'tpope/vim-sensible'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
@@ -22,7 +26,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'tpope/vim-rhubarb'
 Bundle 'motemen/git-vim'
 Bundle 'mattn/zencoding-vim'
-Bundle 'afternoon/vim-phpunit'
+Bundle 'docteurklein/vim-phpunit'
 Bundle 'renanivo/vim-makegreen'
 Bundle 'othree/javascript-syntax.vim'
 Bundle 'altercation/vim-colors-solarized'
@@ -43,8 +47,12 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'spf13/PIV'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'vim-scripts/wombat256.vim'
+Bundle 'tpope/vim-markdown'
 
-" Usability
+" }}}
+
+" Usability {{{
+
 if !exists('g:dotvim_loaded')
     syntax enable
 
@@ -72,8 +80,9 @@ set cursorline
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
+" }}}
 
-" Status Line
+" Status Line {{{
 if !exists('g:Powerline_loaded')
     set statusline=%f       "tail of the filename
 
@@ -103,13 +112,17 @@ if !exists('g:Powerline_loaded')
     set laststatus=2
 endif
 
+" }}}
+
+
+" Plugin Configuration {{{
+
 function! s:disable_php_folds()
     if get(g:, 'DisableAutoPHPFolding', 0)
         normal zR
     endif
 endfunction
 
-" Plugin Configuration
 let g:neocomplcache_enable_at_startup = 1
 let g:DisableAutoPHPFolding = 1
 autocmd Syntax php call s:disable_php_folds()
@@ -117,3 +130,5 @@ autocmd Syntax php call s:disable_php_folds()
 " Easy tags
 let s:dir = has('win32') ? '$APPDATA/Vim' : match(system('uname'), "Darwin") > -1 ? '~/Library/Vim' : empty($XDG_DATA_HOME) ? '~/.local/share/vim' : '$XDG_DATA_HOME/vim'
 let g:easytags_by_filetype = expand(s:dir) . '/tags//'
+
+" }}}
