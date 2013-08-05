@@ -51,7 +51,7 @@
 
     " }}}
 
-    " Usability {{{
+" Usability {{{
 
     if !exists('g:dotvim_loaded')
         syntax enable
