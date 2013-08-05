@@ -1,9 +1,10 @@
+[![Stories in Ready](https://badge.waffle.io/renanivo/dotvim.png)](https://waffle.io/renanivo/dotvim)  
 dotVIM
 ======
 
-Repositório compartilhado de configuração do vim
+RepositC3rio compartilhado de configuraC'C#o do vim
 
-Instalação
+InstalaC'C#o
 ----------
 Abra um terminal e execute:
 
@@ -14,54 +15,54 @@ Abra um terminal e execute:
 
 
 ### Problemas conhecidos
-O Ack.vim procura pelo comando *ack*, no ubuntu o nome do comando correspondente é *ack-grep*. Para corrigir isto, execute o seguinte comando após a instalação:
+O Ack.vim procura pelo comando *ack*, no ubuntu o nome do comando correspondente C) *ack-grep*. Para corrigir isto, execute o seguinte comando apC3s a instalaC'C#o:
 
     make ubuntu
 
-Você também pode fazer isto manualmente, adicionando a seguinte linha ao seu .vimrc:
+VocC* tambC)m pode fazer isto manualmente, adicionando a seguinte linha ao seu .vimrc:
 
     let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 
-### Dependências
+### DependC*ncias
 
 #### Ack.vim
 
-O ack.vim necessita do comando ack-grep. Para instalá-lo no debian / ubuntu, execute:
+O ack.vim necessita do comando ack-grep. Para instalC!-lo no debian / ubuntu, execute:
 
     sudo apt-get install ack-grep
 
-Mais informações em: https://github.com/mileszs/ack.vim#readme
+Mais informaC'C5es em: https://github.com/mileszs/ack.vim#readme
 
 
 #### Instant Markdown
 
-Este plugin tem dependências que precisam ser instaladas via ruby gems e NPM. Certifique-se de que tem ambos instalados e execute:
+Este plugin tem dependC*ncias que precisam ser instaladas via ruby gems e NPM. Certifique-se de que tem ambos instalados e execute:
 
     make instant-markdown
 
 
 #### Nose Compiler
 
-O [compiler](http://vimdoc.sourceforge.net/htmldoc/quickfix.html#quickfix.txt) para o [nose](https://nose.readthedocs.org/en/latest/) (Python) necessita de uma dependência extra, se você pretende rodar os testes do seu código Python no vim usando o comando :make, execute:
+O [compiler](http://vimdoc.sourceforge.net/htmldoc/quickfix.html#quickfix.txt) para o [nose](https://nose.readthedocs.org/en/latest/) (Python) necessita de uma dependC*ncia extra, se vocC* pretende rodar os testes do seu cC3digo Python no vim usando o comando :make, execute:
 
     make nose-compiler
 
 
 #### Powerline
 
-Para utilizar os [fancy symbols](https://github.com/Lokaltog/vim-powerline#troubleshooting) da Powerline, é necessário que você instale fontes compatíveis. Você pode encontrar algumas na [wiki da Powerline](https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts).
+Para utilizar os [fancy symbols](https://github.com/Lokaltog/vim-powerline#troubleshooting) da Powerline, C) necessC!rio que vocC* instale fontes compatC-veis. VocC* pode encontrar algumas na [wiki da Powerline](https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts).
 
 
-Atualização
+AtualizaC'C#o
 -----------
 
-Uma vez instalado, obtenha as últimas atualizações com o comando:
+Uma vez instalado, obtenha as C:ltimas atualizaC'C5es com o comando:
 
     make update
 
 
-**atualização de 05/02/2012**: Pelo dotVIM ter migrado o gerenciamento de plugins do *Pathogen* para o *Vundle*, o comando `make update` pode não funcionar como o esperado na primeira vez. Se isto acontecer, simplesmente execute o comando novamente.
+**atualizaC'C#o de 05/02/2012**: Pelo dotVIM ter migrado o gerenciamento de plugins do *Pathogen* para o *Vundle*, o comando `make update` pode nC#o funcionar como o esperado na primeira vez. Se isto acontecer, simplesmente execute o comando novamente.
 
 Receitas
 --------
