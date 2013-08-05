@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/renanivo/dotvim.png)](https://waffle.io/renanivo/dotvim)  
 dotVIM
 ======
 
