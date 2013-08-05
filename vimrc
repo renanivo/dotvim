@@ -48,8 +48,9 @@
     Bundle 'tsaleh/vim-matchit'
     Bundle 'vim-scripts/wombat256.vim'
     Bundle 'tpope/vim-markdown'
+    Bundle 'tpope/vim-repeat'
 
-    " }}}
+" }}}
 
 " Usability {{{
 
@@ -80,9 +81,9 @@
     autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
     autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
-    " }}}
+" }}}
 
-    " Status Line {{{
+" Status Line {{{
     if !exists('g:Powerline_loaded')
         set statusline=%f       "tail of the filename
 
