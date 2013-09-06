@@ -30,6 +30,7 @@
     Bundle 'renanivo/vim-makegreen'
     Bundle 'othree/javascript-syntax.vim'
     Bundle 'altercation/vim-colors-solarized'
+    Bundle 'xolox/vim-misc'
     Bundle 'xolox/vim-easytags'
     Bundle 'mattn/gist-vim'
     Bundle 'lambdalisue/nose.vim'
