@@ -3,6 +3,8 @@ dotVIM
 
 Repositório compartilhado de configuração do vim
 
+[![Stories in Ready](https://badge.waffle.io/renanivo/dotvim.png)](https://waffle.io/renanivo/dotvim)
+
 Instalação
 ----------
 Abra um terminal e execute:
