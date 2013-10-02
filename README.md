@@ -99,6 +99,7 @@ Plugins Inclusos
 * [PIV](https://github.com/spf13/PIV)
 * [Powerline](https://github.com/Lokaltog/vim-powerline)
 * [Puppet Config Syntax](https://github.com/rodjek/vim-puppet/)
+* [Repeat.vim](https://github.com/tpope/vim-repeat)
 * [Rhubarb](https://github.com/tpope/vim-rhubarb)
 * [Snipmate](https://github.com/msanders/snipmate.vim)
 * [Solarized](https://github.com/altercation/vim-colors-solarized)
