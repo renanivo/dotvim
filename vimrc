@@ -44,12 +44,12 @@
     Bundle 'suan/vim-instant-markdown'
     Bundle 'renanivo/vim-powerline'
     Bundle 'jmcantrell/vim-virtualenv'
-    Bundle 'msanders/snipmate.vim'
     Bundle 'spf13/PIV'
     Bundle 'tsaleh/vim-matchit'
     Bundle 'vim-scripts/wombat256.vim'
     Bundle 'tpope/vim-markdown'
     Bundle 'tpope/vim-repeat'
+    Bundle 'Shougo/neosnippet.vim'
 
 " }}}
 
@@ -140,4 +140,15 @@
 
     " Instant Markdown
     let g:instant_markdown_slow = 1
+
+    " Snipmate
+    imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+                \ "\<Plug>(neosnippet_expand_or_jump)"
+                \: pumvisible() ? "\<C-n>" : "\<TAB>"
+    smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+                \ "\<Plug>(neosnippet_expand_or_jump)"
+                \: "\<TAB>"
+    if has('conceal')
+        set conceallevel=2 concealcursor=i
+    endif
 " }}}
