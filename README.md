@@ -63,8 +63,6 @@ Uma vez instalado, obtenha as últimas atualizações com o comando:
     make update
 
 
-**atualização de 05/02/2012**: Pelo dotVIM ter migrado o gerenciamento de plugins do *Pathogen* para o *Vundle*, o comando `make update` pode não funcionar como o esperado na primeira vez. Se isto acontecer, simplesmente execute o comando novamente.
-
 Receitas
 --------
 
@@ -80,33 +78,46 @@ Plugins Inclusos
 ----------------
 
 * [Ack](https://github.com/mileszs/ack.vim)
+* [CtrlP](https://github.com/kien/ctrlp.vim)
 * [EasyTags](https://github.com/xolox/vim-easytags)
 * [Fugitive](https://github.com/tpope/vim-fugitive)
 * [Gist](https://github.com/mattn/gist-vim)
 * [Git](https://github.com/motemen/git-vim)
 * [Gundo](https://github.com/sjl/gundo.vim)
 * [Instant Markdown](https://github.com/suan/vim-instant-markdown)
-* [Javascript Syntax](https://github.com/othree/javascript-syntax.vim)
 * [MakeGreen](https://github.com/renanivo/vim-makegreen)
 * [Matchit](https://github.com/tsaleh/vim-matchit)
 * [Neocomplcache](https://github.com/Shougo/neocomplcache)
 * [Neosnippet](https://github.com/Shougo/neosnippet.vim)
 * [NERDTree](https://github.com/scrooloose/nerdtree)
-* [Nginx Config Syntax](https://github.com/vim-scripts/nginx.vim)
-* [Nose Compiler](https://github.com/lambdalisue/nose.vim)
-* [PHPUnit](https://github.com/afternoon/vim-phpunit)
 * [Paredit](https://github.com/vim-scripts/paredit.vim)
 * [PHP Complete](https://github.com/shawncplus/phpcomplete.vim)
 * [PIV](https://github.com/spf13/PIV)
 * [Powerline](https://github.com/Lokaltog/vim-powerline)
-* [Puppet Config Syntax](https://github.com/rodjek/vim-puppet/)
-* [Repeat.vim](https://github.com/tpope/vim-repeat)
+* [Repeat](https://github.com/tpope/vim-repeat)
 * [Rhubarb](https://github.com/tpope/vim-rhubarb)
-* [Solarized](https://github.com/altercation/vim-colors-solarized)
+* [Sensible](https://github.com/tpope/vim-sensible)
 * [Surround](https://github.com/tpope/vim-surround)
 * [Syntastic](https://github.com/scrooloose/syntastic)
 * [Tagbar](https://github.com/majutsushi/tagbar)
-* [Twig](https://github.com/beyondwords/vim-twig)
 * [VirtualEnv](https://github.com/jmcantrell/vim-virtualenv)
 * [Web API](https://github.com/mattn/webapi-vim)
 * [Zen Coding](https://github.com/mattn/zencoding-vim)
+
+### Sintaxe
+
+* [Javascript](https://github.com/othree/javascript-syntax.vim)
+* [Markdown](https://github.com/tpope/vim-markdown)
+* [Nginx Config](https://github.com/vim-scripts/nginx.vim)
+* [Puppet](https://github.com/rodjek/vim-puppet/)
+* [Twig](https://github.com/beyondwords/vim-twig)
+
+### Compilers
+
+* [PHPUnit](https://github.com/afternoon/vim-phpunit)
+* [Nose](https://github.com/lambdalisue/nose.vim)
+
+### Temas
+
+* [Wombat 256](https://github.com/vim-scripts/wombat256.vim)
+* [Solarized](https://github.com/altercation/vim-colors-solarized)
