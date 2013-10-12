@@ -82,6 +82,21 @@
     autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
     autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
+    let s:dir = match(system('uname'), "Darwin") > -1 ? '~/Library/Vim' : '~/.local/share/vim'
+    if isdirectory(expand(s:dir))
+      if &directory =~# '^\.,'
+        let &directory = expand(s:dir) . '/swap//,' . &directory
+      endif
+      if &backupdir =~# '^\.,'
+        let &backupdir = expand(s:dir) . '/backup//,' . &backupdir
+      endif
+      if exists('+undodir') && &undodir =~# '^\.\%(,\|$\)'
+        let &undodir = expand(s:dir) . '/undo//,' . &undodir
+      endif
+    endif
+    if exists('+undofile')
+      set undofile
+    endif
 " }}}
 
 " Status Line {{{
@@ -128,8 +143,9 @@
     autocmd Syntax php call s:disable_php_folds()
 
     " EasyTags
-    let s:dir = has('win32') ? '$APPDATA/Vim' : match(system('uname'), "Darwin") > -1 ? '~/Library/Vim' : empty($XDG_DATA_HOME) ? '~/.local/share/vim' : '$XDG_DATA_HOME/vim'
-    let g:easytags_by_filetype = expand(s:dir) . '/tags//'
+    if isdirectory(expand(s:dir))
+        let g:easytags_by_filetype = expand(s:dir) . '/tags//'
+    endif
     let b:easytags_auto_highlight = 0
 
     " Neocomplcache
