@@ -84,18 +84,18 @@
 
     let s:dir = match(system('uname'), "Darwin") > -1 ? '~/Library/Vim' : '~/.local/share/vim'
     if isdirectory(expand(s:dir))
-      if &directory =~# '^\.,'
-        let &directory = expand(s:dir) . '/swap//,' . &directory
-      endif
-      if &backupdir =~# '^\.,'
-        let &backupdir = expand(s:dir) . '/backup//,' . &backupdir
-      endif
-      if exists('+undodir') && &undodir =~# '^\.\%(,\|$\)'
-        let &undodir = expand(s:dir) . '/undo//,' . &undodir
-      endif
+        if &directory =~# '^\.,'
+            let &directory = expand(s:dir) . '/swap//,' . &directory
+        endif
+        if &backupdir =~# '^\.,'
+            let &backupdir = expand(s:dir) . '/backup//,' . &backupdir
+        endif
+        if exists('+undodir') && &undodir =~# '^\.\%(,\|$\)'
+            let &undodir = expand(s:dir) . '/undo//,' . &undodir
+        endif
     endif
     if exists('+undofile')
-      set undofile
+        set undofile
     endif
 " }}}
 
