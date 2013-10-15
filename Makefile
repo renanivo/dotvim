@@ -36,7 +36,7 @@ submodules:
 	@git submodule sync
 
 vundle:
-	@vim +BundleInstall +qa
+	@vim +BundleClean +BundleInstall +qa
 
 nose-compiler:
 	@sudo pip install git+git://github.com/nvie/nose-machineout.git#egg=nose_machineout
