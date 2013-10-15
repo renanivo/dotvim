@@ -80,7 +80,7 @@ Plugins Inclusos
 ----------------
 
 * [Ack](https://github.com/mileszs/ack.vim)
-* [AutoClose](https://github.com/Townk/vim-autoclose)
+* [DelimitMate](https://github.com/Raimondi/delimitMate)
 * [CtrlP](https://github.com/kien/ctrlp.vim)
 * [EasyTags](https://github.com/xolox/vim-easytags)
 * [Fugitive](https://github.com/tpope/vim-fugitive)
