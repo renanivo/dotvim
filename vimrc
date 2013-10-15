@@ -38,6 +38,7 @@
     Bundle 'sjl/gundo.vim'
     Bundle 'spf13/PIV'
     Bundle 'suan/vim-instant-markdown'
+    Bundle 'Townk/vim-autoclose'
     Bundle 'tpope/vim-fugitive'
     Bundle 'tpope/vim-markdown'
     Bundle 'tpope/vim-repeat'
