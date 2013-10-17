@@ -101,35 +101,23 @@
 " }}}
 
 " Status Line {{{
-    if !exists('g:Powerline_loaded')
-        set statusline=%f       "tail of the filename
+    set laststatus=2
 
-        "Git
-        set statusline+=[%{GitBranch()}]
-
-        "display a warning if fileformat isnt unix
-        set statusline+=%#warningmsg#
-        set statusline+=%{&ff!='unix'?'['.&ff.']':''}
-        set statusline+=%*
-
-        "Display a warning if file encoding isnt utf-8
-        set statusline+=%#warningmsg#
-        set statusline+=%{(&fenc!='utf-8'&&&fenc!='')?'['.&fenc.']':''}
-        set statusline+=%*
-
-        "Waring on syntax errors (provided by Syntastic)
-        set statusline+=%#warningmsg#
-        set statusline+=%{SyntasticStatuslineFlag()}
-        set statusline+=%*
-
-        set statusline+=%=      "left/right separator
-
-        set statusline+=%c,     "cursor column
-        set statusline+=%l/%L   "cursor line/total lines
-        set statusline+=\ %P    "percent through file
-        set laststatus=2
+    " Airline
+    if !exists('g:airline_symbols')
+        let g:airline_symbols = {}
     endif
 
+    let g:airline_left_sep = '⮀'
+    let g:airline_left_alt_sep = '⮁'
+    let g:airline_right_sep = '⮂'
+    let g:airline_right_alt_sep = '⮃'
+    let g:airline_symbols.branch = '⭠'
+    let g:airline_symbols.readonly = '⭤'
+    let g:airline_symbols.linenr = '⭡'
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline#extensions#tabline#left_sep = '⮀'
+    let g:airline#extensions#tabline#left_alt_sep = '|'
 " }}}
 
 
@@ -157,32 +145,5 @@
 
     " Instant Markdown
     let g:instant_markdown_slow = 1
-
-    " Snipmate
-    imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-                \ "\<Plug>(neosnippet_expand_or_jump)"
-                \: pumvisible() ? "\<C-n>" : "\<TAB>"
-    smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-                \ "\<Plug>(neosnippet_expand_or_jump)"
-                \: "\<TAB>"
-    if has('conceal')
-        set conceallevel=2 concealcursor=i
-    endif
-
-    if !exists('g:airline_symbols')
-        let g:airline_symbols = {}
-    endif
-
-    " unicode symbols
-    let g:airline_left_sep = '⮀'
-    let g:airline_left_alt_sep = '⮁'
-    let g:airline_right_sep = '⮂'
-    let g:airline_right_alt_sep = '⮃'
-    let g:airline_symbols.branch = '⭠'
-    let g:airline_symbols.readonly = '⭤'
-    let g:airline_symbols.linenr = '⭡'
-    let g:airline#extensions#tabline#enabled = 1
-    let g:airline#extensions#tabline#left_sep = '⮀'
-    let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " }}}
