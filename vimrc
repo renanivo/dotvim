@@ -17,6 +17,7 @@
 
     Bundle 'altercation/vim-colors-solarized'
     Bundle 'beyondwords/vim-twig'
+    Bundle 'bling/vim-airline'
     Bundle 'docteurklein/vim-phpunit'
     Bundle 'jmcantrell/vim-virtualenv'
     Bundle 'kien/ctrlp.vim'
@@ -30,7 +31,6 @@
     Bundle 'othree/javascript-syntax.vim'
     Bundle 'Raimondi/delimitMate'
     Bundle 'renanivo/vim-makegreen'
-    Bundle 'renanivo/vim-powerline'
     Bundle 'rodjek/vim-puppet'
     Bundle 'scrooloose/nerdtree'
     Bundle 'scrooloose/syntastic'
@@ -168,4 +168,21 @@
     if has('conceal')
         set conceallevel=2 concealcursor=i
     endif
+
+    if !exists('g:airline_symbols')
+        let g:airline_symbols = {}
+    endif
+
+    " unicode symbols
+    let g:airline_left_sep = '⮀'
+    let g:airline_left_alt_sep = '⮁'
+    let g:airline_right_sep = '⮂'
+    let g:airline_right_alt_sep = '⮃'
+    let g:airline_symbols.branch = '⭠'
+    let g:airline_symbols.readonly = '⭤'
+    let g:airline_symbols.linenr = '⭡'
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline#extensions#tabline#left_sep = '⮀'
+    let g:airline#extensions#tabline#left_alt_sep = '|'
+
 " }}}
