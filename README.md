@@ -114,6 +114,9 @@ Plugins Inclusos
 * [Nginx Config](https://github.com/vim-scripts/nginx.vim)
 * [Puppet](https://github.com/rodjek/vim-puppet/)
 * [Twig](https://github.com/beyondwords/vim-twig)
+* [HAML](https://github.com/tpope/vim-haml)
+* [Sass](https://github.com/tpope/vim-haml)
+* [SCSS](https://github.com/tpope/vim-haml)
 
 ### Compilers
 

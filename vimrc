@@ -40,6 +40,7 @@
     Bundle 'spf13/PIV'
     Bundle 'suan/vim-instant-markdown'
     Bundle 'tpope/vim-fugitive'
+    Bundle 'tpope/vim-haml'
     Bundle 'tpope/vim-markdown'
     Bundle 'tpope/vim-repeat'
     Bundle 'tpope/vim-rhubarb'
