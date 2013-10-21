@@ -123,14 +123,6 @@
 
 " Plugin Configuration {{{
 
-    function! s:disable_php_folds()
-        if get(g:, 'DisableAutoPHPFolding', 0)
-            normal zR
-        endif
-    endfunction
-
-    autocmd Syntax php call s:disable_php_folds()
-
     " EasyTags
     if isdirectory(expand(s:dir))
         let g:easytags_by_filetype = expand(s:dir) . '/tags//'
