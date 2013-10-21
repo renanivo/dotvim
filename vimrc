@@ -37,7 +37,6 @@
     Bundle 'Shougo/neocomplcache'
     Bundle 'Shougo/neosnippet.vim'
     Bundle 'sjl/gundo.vim'
-    Bundle 'spf13/PIV'
     Bundle 'suan/vim-instant-markdown'
     Bundle 'tpope/vim-fugitive'
     Bundle 'tpope/vim-haml'
