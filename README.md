@@ -95,7 +95,6 @@ Plugins Inclusos
 * [NERDTree](https://github.com/scrooloose/nerdtree)
 * [Paredit](https://github.com/vim-scripts/paredit.vim)
 * [PHP Complete](https://github.com/shawncplus/phpcomplete.vim)
-* [PIV](https://github.com/spf13/PIV)
 * [Powerline](https://github.com/Lokaltog/vim-powerline)
 * [Repeat](https://github.com/tpope/vim-repeat)
 * [Rhubarb](https://github.com/tpope/vim-rhubarb)
