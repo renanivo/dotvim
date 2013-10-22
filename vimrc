@@ -34,6 +34,7 @@
     Bundle 'rodjek/vim-puppet'
     Bundle 'scrooloose/nerdtree'
     Bundle 'scrooloose/syntastic'
+    Bundle 'shawncplus/phpcomplete.vim'
     Bundle 'Shougo/neocomplcache'
     Bundle 'Shougo/neosnippet.vim'
     Bundle 'sjl/gundo.vim'
