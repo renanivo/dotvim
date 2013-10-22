@@ -48,6 +48,11 @@ instant-markdown:
 ubuntu:
 	@echo 'let g:ackprg="ack-grep -H --nocolor --nogroup --column"' >> ~/.vimrc
 
+ctags-mac:
+	@cd /usr/local/Library/Formula; \
+		curl https://gist.github.com/renanivo/7102561/raw/35409553993c53a0ef9eedc1fca08d24a57dee55/ctags.patch | git apply
+	@brew install ctags --HEAD
+
 cache-dirs:
 	@mkdir -p $(CACHE_FOLDER)/backup/
 	@mkdir -p $(CACHE_FOLDER)/swap/
