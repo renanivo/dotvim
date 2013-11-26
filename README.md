@@ -72,9 +72,6 @@ Receitas
 * [Eher](https://gist.github.com/1698770)
 * [Renan Ivo](https://gist.github.com/415001)
 
-### Atalhos
-* [Autocomplete com tabs no neocomplcache](https://gist.github.com/2406907)
-
 
 Plugins Inclusos
 ----------------
@@ -90,7 +87,7 @@ Plugins Inclusos
 * [Instant Markdown](https://github.com/suan/vim-instant-markdown)
 * [MakeGreen](https://github.com/renanivo/vim-makegreen)
 * [Matchit](https://github.com/tsaleh/vim-matchit)
-* [Neocomplcache](https://github.com/Shougo/neocomplcache)
+* [Neocomplete](https://github.com/Shougo/neocomplete.vim)
 * [Neosnippet](https://github.com/Shougo/neosnippet.vim)
 * [NERDTree](https://github.com/scrooloose/nerdtree)
 * [Paredit](https://github.com/vim-scripts/paredit.vim)

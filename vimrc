@@ -35,7 +35,7 @@
     Bundle 'scrooloose/nerdtree'
     Bundle 'scrooloose/syntastic'
     Bundle 'shawncplus/phpcomplete.vim'
-    Bundle 'Shougo/neocomplcache'
+    Bundle 'Shougo/neocomplete.vim'
     Bundle 'Shougo/neosnippet.vim'
     Bundle 'sjl/gundo.vim'
     Bundle 'suan/vim-instant-markdown'
@@ -103,7 +103,6 @@
 
 " Status Line {{{
     set laststatus=2
-
 " }}}
 
 " Plugin Configuration {{{
@@ -115,10 +114,7 @@
     let b:easytags_auto_highlight = 0
 
     " Neocomplcache
-    let g:neocomplcache_enable_at_startup = 1
-
-    " PIV
-    let g:DisableAutoPHPFolding = 1
+    let g:neocomplete#enable_at_startup = 1
 
     " Instant Markdown
     let g:instant_markdown_slow = 1
