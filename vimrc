@@ -35,7 +35,7 @@
     Bundle 'scrooloose/nerdtree'
     Bundle 'scrooloose/syntastic'
     Bundle 'shawncplus/phpcomplete.vim'
-    Bundle 'Shougo/neocomplete.vim'
+    Bundle 'Valloric/YouCompleteMe'
     Bundle 'Shougo/neosnippet.vim'
     Bundle 'sjl/gundo.vim'
     Bundle 'suan/vim-instant-markdown'
@@ -112,9 +112,6 @@
         let g:easytags_by_filetype = expand(s:dir) . '/tags//'
     endif
     let b:easytags_auto_highlight = 0
-
-    " Neocomplcache
-    let g:neocomplete#enable_at_startup = 1
 
     " Instant Markdown
     let g:instant_markdown_slow = 1

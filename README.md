@@ -56,6 +56,12 @@ O [compiler](http://vimdoc.sourceforge.net/htmldoc/quickfix.html#quickfix.txt) p
 
 Para utilizar os [fancy symbols](https://github.com/Lokaltog/vim-powerline#troubleshooting) da Powerline, é necessário que você instale fontes compatíveis. Você pode encontrar algumas na [wiki da Powerline](https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts).
 
+#### YouCompleteMe
+
+Para compilar as dependências do plugin, execute:
+
+    make youcompleteme
+
 
 Atualização
 -----------
@@ -77,8 +83,8 @@ Plugins Inclusos
 ----------------
 
 * [Ack](https://github.com/mileszs/ack.vim)
-* [DelimitMate](https://github.com/Raimondi/delimitMate)
 * [CtrlP](https://github.com/kien/ctrlp.vim)
+* [DelimitMate](https://github.com/Raimondi/delimitMate)
 * [EasyTags](https://github.com/xolox/vim-easytags)
 * [Fugitive](https://github.com/tpope/vim-fugitive)
 * [Gist](https://github.com/mattn/gist-vim)
@@ -87,7 +93,6 @@ Plugins Inclusos
 * [Instant Markdown](https://github.com/suan/vim-instant-markdown)
 * [MakeGreen](https://github.com/renanivo/vim-makegreen)
 * [Matchit](https://github.com/tsaleh/vim-matchit)
-* [Neocomplete](https://github.com/Shougo/neocomplete.vim)
 * [Neosnippet](https://github.com/Shougo/neosnippet.vim)
 * [NERDTree](https://github.com/scrooloose/nerdtree)
 * [Paredit](https://github.com/vim-scripts/paredit.vim)
@@ -101,6 +106,7 @@ Plugins Inclusos
 * [Tagbar](https://github.com/majutsushi/tagbar)
 * [VirtualEnv](https://github.com/jmcantrell/vim-virtualenv)
 * [Web API](https://github.com/mattn/webapi-vim)
+* [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 * [Zen Coding](https://github.com/mattn/zencoding-vim)
 
 ### Sintaxe
