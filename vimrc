@@ -84,7 +84,7 @@
     autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
     autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
-    let s:dir = match(system('uname'), "Darwin") > -1 ? '~/Library/Vim' : '~/.local/share/vim'
+    let s:dir = isdirectory(expand('~/Library')) ? '~/Library/Vim' : '~/.local/share/vim'
     if isdirectory(expand(s:dir))
         if &directory =~# '^\.,'
             let &directory = expand(s:dir) . '/swap//,' . &directory
