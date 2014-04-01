@@ -62,7 +62,7 @@
 
         set t_Co=256
         set background=dark
-        colorscheme solarized
+        silent! colorscheme solarized
 
         let g:dotvim_loaded = 1
     endif
