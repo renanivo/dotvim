@@ -17,6 +17,7 @@
 
     Bundle 'altercation/vim-colors-solarized'
     Bundle 'beyondwords/vim-twig'
+    Bundle 'bling/vim-airline'
     Bundle 'docteurklein/vim-phpunit'
     Bundle 'jmcantrell/vim-virtualenv'
     Bundle 'kien/ctrlp.vim'
@@ -30,7 +31,6 @@
     Bundle 'othree/javascript-syntax.vim'
     Bundle 'Raimondi/delimitMate'
     Bundle 'renanivo/vim-makegreen'
-    Bundle 'renanivo/vim-powerline'
     Bundle 'rodjek/vim-puppet'
     Bundle 'scrooloose/nerdtree'
     Bundle 'scrooloose/syntastic'
