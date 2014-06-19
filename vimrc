@@ -119,4 +119,7 @@
     " Instant Markdown
     let g:instant_markdown_slow = 1
 
+    " Easytags
+    let g:easytags_updatetime_warn = 0
+
 " }}}
