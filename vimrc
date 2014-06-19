@@ -11,6 +11,8 @@
     set exrc
     set secure
 
+    set shell=/bin/bash
+
 " }}}
 
 " Plugins {{{
@@ -19,6 +21,7 @@
     Plugin 'beyondwords/vim-twig'
     Plugin 'bling/vim-airline'
     Plugin 'docteurklein/vim-phpunit'
+    Plugin 'honza/vim-snippets'
     Plugin 'jmcantrell/vim-virtualenv'
     Plugin 'kien/ctrlp.vim'
     Plugin 'lambdalisue/nose.vim'
