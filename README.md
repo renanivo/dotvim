@@ -1,15 +1,14 @@
 dotVIM
 ======
 
-Repositório compartilhado de configuração do vim
+My vim configurations
 
 [![Stories in Ready](https://badge.waffle.io/renanivo/dotvim.png)](https://waffle.io/renanivo/dotvim)
 
 ![Screenshot](http://i.imgur.com/ijQ54oX.png?1)
 
-Instalação
-----------
-Abra um terminal e execute:
+Install
+-------
 
     git clone git://github.com/renanivo/dotvim.git ~/.vim
     cd ~/.vim
@@ -17,70 +16,67 @@ Abra um terminal e execute:
     echo "source ~/.vim/vimrc" >> ~/.vimrc
 
 
-### Problemas conhecidos
-O Ack.vim procura pelo comando *ack*, no ubuntu o nome do comando correspondente é *ack-grep*. Para corrigir isto, execute o seguinte comando após a instalação:
+### Known Issues
+
+Ack.vim plugin looks for the command *ack*. In Ubuntu this command is known as *ack-grep*. In order to make it work on Ubuntu, you have to execute:
 
     make ubuntu
 
-Você também pode fazer isto manualmente, adicionando a seguinte linha ao seu .vimrc:
+You can don it manually adding the following line to your `.vimrc`
 
     let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 
-### Dependências
+### Dependencies
 
 #### Ack.vim
 
-O ack.vim necessita do comando ack-grep. Para instalá-lo no debian / ubuntu, execute:
+* Ack command line tool
 
+    install on Ubuntu
+
+    ```bash
     sudo apt-get install ack-grep
+    ```
 
-Mais informações em: https://github.com/mileszs/ack.vim#readme
+    install on OSX
+
+    ```bash
+    brew install ack
+    ```
+
+    [read more](https://github.com/mileszs/ack.vim#readme)
 
 
 #### Instant Markdown
 
-Este plugin tem dependências que precisam ser instaladas via ruby gems e NPM. Certifique-se de que tem ambos instalados e execute:
+This plugin requires some [ruby gems](https://rubygems.org/) and [NPM modules](https://www.npmjs.org/). Make sure both are installed and execute:
 
-    make instant-markdown
-
+```bash
+make instant-markdown
+```
 
 #### Nose Compiler
 
-O [compiler](http://vimdoc.sourceforge.net/htmldoc/quickfix.html#quickfix.txt) para o [nose](https://nose.readthedocs.org/en/latest/) (Python) necessita de uma dependência extra, se você pretende rodar os testes do seu código Python no vim usando o comando :make, execute:
+The [nose](https://github.com/lambdalisue/nose.vim) compiler needs [nose-machineout](https://github.com/nvie/nose-machineout) formater. To install it, execute:
 
     make nose-compiler
 
-
-#### Powerline
-
-Para utilizar os [fancy symbols](https://github.com/Lokaltog/vim-powerline#troubleshooting) da Powerline, é necessário que você instale fontes compatíveis. Você pode encontrar algumas na [wiki da Powerline](https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts).
-
 #### YouCompleteMe
 
-Para compilar as dependências do plugin, execute:
+Install gcc and compile it with:
 
     make youcompleteme
 
 
-Atualização
------------
-
-Uma vez instalado, obtenha as últimas atualizações com o comando:
+Updates
+-------
 
     make update
 
 
-Receitas
---------
-
-### .vimrc's
-* [Eher](https://gist.github.com/1698770)
-* [Renan Ivo](https://gist.github.com/415001)
-
-
-Plugins Inclusos
-----------------
+Installed Plugins
+-----------------
 
 * [Ack](https://github.com/mileszs/ack.vim)
 * [CtrlP](https://github.com/kien/ctrlp.vim)
@@ -109,7 +105,7 @@ Plugins Inclusos
 * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 * [Zen Coding](https://github.com/mattn/zencoding-vim)
 
-### Sintaxe
+### Syntax
 
 * [Javascript](https://github.com/othree/javascript-syntax.vim)
 * [Markdown](https://github.com/tpope/vim-markdown)
@@ -125,7 +121,7 @@ Plugins Inclusos
 * [PHPUnit](https://github.com/afternoon/vim-phpunit)
 * [Nose](https://github.com/lambdalisue/nose.vim)
 
-### Temas
+### Themes
 
 * [Wombat 256](https://github.com/vim-scripts/wombat256.vim)
 * [Solarized](https://github.com/altercation/vim-colors-solarized)
