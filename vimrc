@@ -53,6 +53,7 @@
     Plugin 'vim-scripts/nginx.vim'
     Plugin 'vim-scripts/paredit.vim'
     Plugin 'vim-scripts/wombat256.vim'
+    Plugin 'wakatime/vim-wakatime'
     Plugin 'xolox/vim-easytags'
     Plugin 'xolox/vim-misc'
 
