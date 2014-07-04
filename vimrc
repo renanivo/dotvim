@@ -17,6 +17,7 @@
 
 " Plugins {{{
 
+    Plugin 'airblade/vim-gitgutter'
     Plugin 'altercation/vim-colors-solarized'
     Plugin 'beyondwords/vim-twig'
     Plugin 'bling/vim-airline'
