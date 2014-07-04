@@ -1,0 +1,24 @@
+snippet #c "prints the UTF-8 coding comment" b
+# -*- coding: utf-8 -*-
+endsnippet
+
+snippet from "from x import y" b
+from ${1} import ${0}
+endsnippet
+
+snippet classs "The most simple class" b
+class ${1:ClassName}(${2:object}):
+	${0:pass}
+endsnippet
+
+snippet classfd "Factory Class of factory boy" b
+class ${1:Model}Factory(${2:factory.Factory}):
+	class Meta:
+		model = models.$1
+endsnippet
+
+snippet classfd "Django Model Factory Class of factory boy" b
+class ${1:Model}Factory(${2:django.DjangoModelFactory}):
+	class Meta:
+		model = models.$1
+endsnippet
