@@ -34,7 +34,6 @@
     Plugin 'mileszs/ack.vim'
     Plugin 'motemen/git-vim'
     Plugin 'othree/javascript-syntax.vim'
-    Plugin 'Raimondi/delimitMate'
     Plugin 'renanivo/vim-makegreen'
     Plugin 'rodjek/vim-puppet'
     Plugin 'scrooloose/nerdtree'
