@@ -24,6 +24,7 @@
     Plugin 'bling/vim-airline'
     Plugin 'docteurklein/vim-phpunit'
     Plugin 'honza/vim-snippets'
+    Plugin 'jiangmiao/auto-pairs'
     Plugin 'jmcantrell/vim-virtualenv'
     Plugin 'kien/ctrlp.vim'
     Plugin 'lambdalisue/nose.vim'
