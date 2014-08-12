@@ -86,10 +86,6 @@
     set colorcolumn=80
     set cursorline
 
-    " autoclose omni-completion tip
-    autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-    autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-
     let s:dir = isdirectory(expand('~/Library')) ? '~/Library/Vim' : '~/.local/share/vim'
     if isdirectory(expand(s:dir))
         if &directory =~# '^\.,'
