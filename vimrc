@@ -86,6 +86,8 @@
     set colorcolumn=80
     set cursorline
 
+    autocmd BufWritePost * if pumvisible() == 0|pclose|endif
+
     let s:dir = isdirectory(expand('~/Library')) ? '~/Library/Vim' : '~/.local/share/vim'
     if isdirectory(expand(s:dir))
         if &directory =~# '^\.,'
