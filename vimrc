@@ -116,6 +116,7 @@
         let g:easytags_by_filetype = expand(s:dir) . '/tags//'
     endif
     let b:easytags_auto_highlight = 0
+    let g:easytags_async = 1
 
     " Instant Markdown
     let g:instant_markdown_slow = 1
