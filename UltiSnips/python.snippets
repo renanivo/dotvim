@@ -6,15 +6,10 @@ snippet from "from x import y" b
 from ${1} import ${0}
 endsnippet
 
-snippet classs "The most simple class" b
+snippet class "The most simple class" b
 class ${1:ClassName}(${2:object}):
-	${0:pass}
-endsnippet
 
-snippet classfd "Factory Class of factory boy" b
-class ${1:Model}Factory(${2:factory.Factory}):
-	class Meta:
-		model = models.$1
+	${0:pass}
 endsnippet
 
 snippet classfd "Django Model Factory Class of factory boy" b
@@ -32,5 +27,10 @@ endsnippet
 snippet classpt "Pytest TestCase" b
 class Test${1:ClassName}(object):
 
+	${0:pass}
+endsnippet
+
+snippet def "Function definition" b
+def ${1:function_name}(${2:self}):
 	${0:pass}
 endsnippet
