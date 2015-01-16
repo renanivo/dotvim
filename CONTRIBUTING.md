@@ -1,3 +1,10 @@
-- Não adicione plugins diretamente. O respositório usa pathogen, adicione o plugin como submodulo na pasta bundle e atualize o README, se apropriado
+Suggestions are welcome, but this is my personal setup. So I may not merge your
+pull request in behalf of my personal workflow.
 
-- Não adicione mapeamentos de teclas (:map, :imap, :vmap, etc.) ao vimrc global. Isto evita conflitos de mapeamentos entre os usuários do projeto. Se você criou mapeamentos, ou configurações, que são mais cômodas para você e podem interessar a outros, adicione na seção **Receitas** do README.md
+If you are looking for a less opinionated setup, take a look at:
+
+* [VIM Bootstrap](http://vim-bootstrap.com/)
+* [SPF13-VIM](https://github.com/spf13/spf13-vim)
+
+If you really think you can do something better using my setup as a bootstrap,
+**fork it!** :fork_and_knife:
