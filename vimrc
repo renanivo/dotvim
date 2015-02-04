@@ -22,7 +22,6 @@
     Plugin 'altercation/vim-colors-solarized'
     Plugin 'beyondwords/vim-twig'
     Plugin 'bling/vim-airline'
-    Plugin 'docteurklein/vim-phpunit'
     Plugin 'honza/vim-snippets'
     Plugin 'jiangmiao/auto-pairs'
     Plugin 'jmcantrell/vim-virtualenv'
