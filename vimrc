@@ -1,5 +1,4 @@
 " Baseline {{{
-
     set nocompatible
     filetype off
 
@@ -67,10 +66,29 @@
 
         set t_Co=256
         set background=dark
-        silent! colorscheme solarized
+
+        if !has("gui_running")
+            silent! colorscheme wombat256mod
+        else
+            set guifont=Monaco:h11
+            silent! colorscheme solarized
+        endif
 
         let g:dotvim_loaded = 1
     endif
+
+    set tabstop=4
+    set softtabstop=4
+    set shiftwidth=4
+    set expandtab
+
+    set foldmethod=marker
+    set nofoldenable
+
+    "remove toolbar
+    set guioptions-=T
+
+    set wildignore=.git,vendor,*.pyc
 
     set list
 
@@ -85,8 +103,9 @@
     set colorcolumn=80
     set cursorline
 
-    autocmd BufWritePost * if pumvisible() == 0|pclose|endif
+    set laststatus=2
 
+    " Backup, Swap and Undo files {{{
     let s:dir = isdirectory(expand('~/Library')) ? '~/Library/Vim' : '~/.local/share/vim'
     if isdirectory(expand(s:dir))
         if &directory =~# '^\.,'
@@ -102,14 +121,10 @@
     if exists('+undofile')
         set undofile
     endif
-" }}}
-
-" Status Line {{{
-    set laststatus=2
+    " }}}
 " }}}
 
 " Plugin Configuration {{{
-
     " EasyTags
     if isdirectory(expand(s:dir))
         let g:easytags_by_filetype = expand(s:dir) . '/tags//'
@@ -123,4 +138,49 @@
     " Easytags
     let g:easytags_updatetime_warn = 0
 
+    let g:makegreen_stay_on_file = 1
+    let NERDTreeIgnore = ['\.pyc$']
+    let g:syntastic_javascript_jslint_conf = ""
+
+    " let g:airline_powerline_fonts = 1
+    let g:airline_symbols = {}
+    let g:airline_left_sep = '▶'
+    let g:airline_right_sep = '◀'
+    let g:airline_symbols.linenr = '␤'
+    let g:airline_symbols.branch = '⎇'
+    let g:airline_symbols.paste = 'ρ'
+    let g:airline_symbols.whitespace = 'Ξ'
+    let g:airline_symbols.space = ' '
+" }}}
+
+" Shortcuts {{{
+    nmap th :tabfirst<CR>
+    nmap tk :tabnext<CR>
+    nmap tj :tabprev<CR>
+    nmap tl :tablast<CR>
+    nmap td :tabclose<CR>
+    nmap te :tabnew<CR>
+
+    nmap fh :bfirst<CR>
+    nmap fk :bnext<CR>
+    nmap fj :bprevious<CR>
+    nmap fl :blast<CR>
+    nmap fd :bdelete<CR>
+
+    imap <C-Space> <C-X><C-O>
+
+    let g:UltiSnipsExpandTrigger="<c-k>"
+    let g:UltiSnipsJumpForwardTrigger="<c-k>"
+    let g:UltiSnipsJumpBackwardTrigger="<c-j>"
+
+    nmap <leader>t :CtrlP<CR>
+    nmap <leader>p :NERDTreeToggle<CR>
+    nmap <leader>c :TagbarToggle<CR>
+    map <C-z> :GundoToggle<CR>
+" }}}
+
+" Autocommands {{{
+    autocmd BufNewFile,BufRead *.py compiler nose
+    autocmd BufWritePost * if pumvisible() == 0|pclose|endif
+    autocmd bufwritepost *vimrc source $MYVIMRC
 " }}}
