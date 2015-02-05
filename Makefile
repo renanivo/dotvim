@@ -21,16 +21,6 @@ install: submodules vundle cache-dirs
 
 update: pull submodules vundle
 
-unstable: go-unstable update
-	@echo ""
-	@echo "$(WARN_COLOR)dotVIM unstable - Coisas podem falhar aqui$(NO_COLOR)"
-	@echo ""
-
-stable: go-stable update
-	@echo ""
-	@echo "$(OK_COLOR)dotVIM stable - Está tudo bem$(WARN_COLOR)"
-	@echo ""
-
 submodules:
 	@git submodule update --init
 	@git submodule sync
@@ -73,9 +63,3 @@ pull:
 
 upgrade-submodules: update
 	@git submodule foreach 'git checkout master; git pull'
-
-go-stable:
-	@git checkout master
-
-go-unstable:
-	@git checkout unstable
