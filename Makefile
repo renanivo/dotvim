@@ -11,7 +11,7 @@ endif
 
 default: install
 
-install: submodules vundle cache-dirs instant-markdown youcompleteme
+install: submodules vundle cache-dirs nose-compiler instant-markdown youcompleteme
 	@echo ""
 	@echo "$(OK_COLOR)dotVIM instalado com sucesso!$(NO_COLOR)"
 	@echo ""
