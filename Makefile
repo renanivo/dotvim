@@ -11,12 +11,9 @@ endif
 
 default: install
 
-install: submodules vundle cache-dirs
+install: submodules vundle cache-dirs instant-markdown youcompleteme
 	@echo ""
 	@echo "$(OK_COLOR)dotVIM instalado com sucesso!$(NO_COLOR)"
-	@echo ""
-	@echo "adicione o seguinte ao seu ~/.vimrc :"
-	@echo "$(WARN_COLOR)source ~/.vim/vimrc$(NO_COLOR)"
 	@echo ""
 
 update: pull submodules vundle
@@ -28,10 +25,16 @@ submodules:
 vundle:
 	@vim +BundleClean! +BundleInstall! +qa
 
+check-npm:
+	@if ! which npm; then \
+		echo "$(WARN_COLOR)Missing NPM$(NO_COLOR)"; \
+		exit 1; \
+	fi
+
 nose-compiler:
 	@sudo pip install git+git://github.com/nvie/nose-machineout.git#egg=nose_machineout
 
-instant-markdown:
+instant-markdown: check-npm
 	@sudo gem install redcarpet pygments.rb
 	@npm -g install instant-markdown-d
 
