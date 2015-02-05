@@ -13,18 +13,22 @@ Install
     git clone git://github.com/renanivo/dotvim.git ~/.vim
     cd ~/.vim
     make
-    echo "source ~/.vim/vimrc" >> ~/.vimrc
 
 
 ### Known Issues
 
 Ack.vim plugin looks for the command *ack*. In Ubuntu this command is known as *ack-grep*. In order to make it work on Ubuntu, you have to execute:
 
+    ```bash
     make ubuntu
+    ```
 
 You can don it manually adding the following line to your `.vimrc`
 
+    ```vim
+    source ~/.vim/vimrc
     let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+    ```
 
 
 ### Dependencies
