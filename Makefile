@@ -11,7 +11,7 @@ endif
 
 default: install
 
-install: submodules vundle cache-dirs nose-compiler instant-markdown youcompleteme
+install: submodules vundle cache-dirs youcompleteme
 	@echo ""
 	@echo "$(OK_COLOR)dotVIM instalado com sucesso!$(NO_COLOR)"
 	@echo ""
@@ -32,7 +32,7 @@ check-npm:
 	fi
 
 nose-compiler:
-	@sudo pip install git+git://github.com/nvie/nose-machineout.git#egg=nose_machineout
+	@pip install git+git://github.com/nvie/nose-machineout.git#egg=nose_machineout
 
 instant-markdown: check-npm
 	@sudo gem install redcarpet pygments.rb
