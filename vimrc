@@ -176,9 +176,11 @@
     let g:UltiSnipsJumpForwardTrigger="<c-k>"
     let g:UltiSnipsJumpBackwardTrigger="<c-j>"
 
-    nmap <leader>t :CtrlP<CR>
-    nmap <leader>p :NERDTreeToggle<CR>
     nmap <leader>c :TagbarToggle<CR>
+    nmap <leader>f :NERDTreeFind<CR>
+    nmap <leader>n :NERDTreeMirror<CR>
+    nmap <leader>p :NERDTreeToggle<CR>
+    nmap <leader>t :CtrlP<CR>
     map <C-z> :GundoToggle<CR>
 " }}}
 
