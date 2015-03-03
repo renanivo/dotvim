@@ -70,7 +70,7 @@
         if !has("gui_running")
             silent! colorscheme wombat256mod
         else
-            set guifont=Monaco:h11
+            set guifont=SourceCodePro+Powerline+Awesome\ Regular:h13
             silent! colorscheme solarized
         endif
 
@@ -142,15 +142,18 @@
     let NERDTreeIgnore = ['\.pyc$']
     let g:syntastic_javascript_jslint_conf = ""
 
-    " let g:airline_powerline_fonts = 1
-    let g:airline_symbols = {}
-    let g:airline_left_sep = '▶'
-    let g:airline_right_sep = '◀'
-    let g:airline_symbols.linenr = '␤'
-    let g:airline_symbols.branch = '⎇'
-    let g:airline_symbols.paste = 'ρ'
-    let g:airline_symbols.whitespace = 'Ξ'
-    let g:airline_symbols.space = ' '
+    if has("gui_running")
+        let g:airline_powerline_fonts = 1
+    else
+        let g:airline_symbols = {}
+        let g:airline_left_sep = ''
+        let g:airline_right_sep = ''
+        let g:airline_symbols.linenr = '␤'
+        let g:airline_symbols.branch = '⎇'
+        let g:airline_symbols.paste = 'ρ'
+        let g:airline_symbols.whitespace = 'Ξ'
+        let g:airline_symbols.space = ' '
+    endif
 " }}}
 
 " Shortcuts {{{
