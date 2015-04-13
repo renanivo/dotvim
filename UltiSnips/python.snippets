@@ -37,3 +37,15 @@ snippet classmeta "Class Meta" b
 class Meta(object):
 	${0:pass}
 endsnippet
+
+snippet djcomm "Django Management Command" b
+from django.core.management.base import BaseCommand, CommandError
+
+
+class Command(BaseCommand):
+	args = '<${1:arg1}>'
+	help = '${2:helptext}'
+
+	def handle(self, *args, **options):
+		${0:pass}
+endsnippet
