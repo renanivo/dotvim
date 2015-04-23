@@ -35,6 +35,7 @@
     Plugin 'othree/javascript-syntax.vim'
     Plugin 'renanivo/vim-makegreen'
     Plugin 'rodjek/vim-puppet'
+    Plugin 'Rykka/InstantRst'
     Plugin 'scrooloose/nerdtree'
     Plugin 'scrooloose/syntastic'
     Plugin 'shawncplus/phpcomplete.vim'
