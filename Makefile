@@ -38,6 +38,9 @@ instant-markdown: check-npm
 	@sudo gem install redcarpet pygments.rb
 	@npm -g install instant-markdown-d
 
+instant-rst:
+	@pip install https://github.com/Rykka/instant-rst.py/archive/master.zip
+
 youcompleteme:
 	@cd ./bundle/YouCompleteMe; sh install.sh
 
