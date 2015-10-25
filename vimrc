@@ -127,18 +127,17 @@
 " }}}
 
 " Plugin Configuration {{{
-    " EasyTags
-    if isdirectory(expand(s:dir))
-        let g:easytags_by_filetype = expand(s:dir) . '/tags//'
-    endif
-    let b:easytags_auto_highlight = 0
-    let g:easytags_async = 1
-
     " Instant Markdown
     let g:instant_markdown_slow = 1
 
     " Easytags
+    if isdirectory(expand(s:dir))
+        let g:easytags_by_filetype = expand(s:dir) . '/tags//'
+    endif
     let g:easytags_updatetime_warn = 0
+    let g:easytags_on_cursorhold = 0
+    let g:easytags_auto_update = 0
+    let b:easytags_auto_highlight = 0
 
     let g:makegreen_stay_on_file = 1
     let NERDTreeIgnore = ['\.pyc$']
