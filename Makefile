@@ -42,7 +42,7 @@ instant-rst:
 	@pip install https://github.com/Rykka/instant-rst.py/archive/master.zip
 
 youcompleteme:
-	@cd ./bundle/YouCompleteMe; sh install.sh
+	@cd ./bundle/YouCompleteMe; chmod +x install.py; ./install.py --clang-completer
 
 ubuntu:
 	@echo 'let g:ackprg="ack-grep -H --nocolor --nogroup --column"' >> ~/.vimrc
