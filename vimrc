@@ -139,10 +139,19 @@
     let g:easytags_auto_update = 0
     let b:easytags_auto_highlight = 0
 
+    " MakeGreen
     let g:makegreen_stay_on_file = 1
+
+    " NERDTree
     let NERDTreeIgnore = ['\.pyc$']
+
+    " Syntastic
     let g:syntastic_javascript_jslint_conf = ""
 
+    " You Complete Me
+    let g:ycm_autoclose_preview_window_after_completion=1
+
+    " Airline
     if has("gui_running")
         let g:airline_powerline_fonts = 1
     else
