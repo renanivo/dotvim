@@ -60,3 +60,9 @@ try:
 except ${0:Exception} as e:
 	pytest.fail('It should not have raised: {}'.format(e))
 endsnippet
+
+snippet pyfix "Pytest's fixture" b
+@pytest.fixture
+def ${1:fixture}(${2:self}):
+	return ${0:None}
+endsnippet
