@@ -22,6 +22,9 @@
     Plugin 'beyondwords/vim-twig'
     Plugin 'bling/vim-airline'
     Plugin 'editorconfig/editorconfig-vim'
+    Plugin 'hdima/python-syntax' " {{{
+        let python_highlight_all = 1
+    " }}}
     Plugin 'honza/vim-snippets'
     Plugin 'jiangmiao/auto-pairs'
     Plugin 'jmcantrell/vim-virtualenv'
