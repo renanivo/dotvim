@@ -12,6 +12,7 @@
 
     set shell=/bin/bash
 
+    let s:config_dir = isdirectory(expand('~/Library')) ? '~/Library/Vim' : '~/.local/share/vim'
 " }}}
 
 " Plugins {{{
@@ -20,7 +21,20 @@
     Plugin 'airblade/vim-gitgutter'
     Plugin 'altercation/vim-colors-solarized'
     Plugin 'beyondwords/vim-twig'
-    Plugin 'bling/vim-airline'
+    Plugin 'bling/vim-airline' " {{{
+        if has("gui_running")
+            let g:airline_powerline_fonts = 1
+        else
+            let g:airline_symbols = {}
+            let g:airline_left_sep = ''
+            let g:airline_right_sep = ''
+            let g:airline_symbols.linenr = '␤'
+            let g:airline_symbols.branch = '⎇'
+            let g:airline_symbols.paste = 'ρ'
+            let g:airline_symbols.whitespace = 'Ξ'
+            let g:airline_symbols.space = ' '
+        endif
+    " }}}
     Plugin 'editorconfig/editorconfig-vim'
     Plugin 'hdima/python-syntax' " {{{
         let python_highlight_all = 1
@@ -28,24 +42,46 @@
     Plugin 'honza/vim-snippets'
     Plugin 'jiangmiao/auto-pairs'
     Plugin 'jmcantrell/vim-virtualenv'
-    Plugin 'kien/ctrlp.vim'
+    Plugin 'kien/ctrlp.vim' "{{{
+        nmap <leader>t :CtrlP<CR>
+    " }}}
     Plugin 'lambdalisue/nose.vim'
-    Plugin 'majutsushi/tagbar'
+    Plugin 'majutsushi/tagbar' " {{{
+        nmap <leader>c :TagbarToggle<CR>
+    " }}}
     Plugin 'mattn/emmet-vim'
     Plugin 'mattn/gist-vim'
     Plugin 'mattn/webapi-vim'
     Plugin 'mileszs/ack.vim'
     Plugin 'motemen/git-vim'
     Plugin 'othree/javascript-syntax.vim'
-    Plugin 'renanivo/vim-makegreen'
+    Plugin 'renanivo/vim-makegreen' " {{{
+        let g:makegreen_stay_on_file = 1
+    " }}}
     Plugin 'rodjek/vim-puppet'
     Plugin 'Rykka/InstantRst'
-    Plugin 'scrooloose/nerdtree'
-    Plugin 'scrooloose/syntastic'
+    Plugin 'scrooloose/nerdtree' " {{{
+        let NERDTreeIgnore = ['\.pyc$']
+
+        nmap <leader>f :NERDTreeFind<CR>
+        nmap <leader>n :NERDTreeMirror<CR>
+        nmap <leader>p :NERDTreeToggle<CR>
+    " }}}
+    Plugin 'scrooloose/syntastic' " {{{
+        let g:syntastic_javascript_jslint_conf = ""
+    " }}}
     Plugin 'shawncplus/phpcomplete.vim'
-    Plugin 'SirVer/ultisnips'
-    Plugin 'sjl/gundo.vim'
-    Plugin 'suan/vim-instant-markdown'
+    Plugin 'SirVer/ultisnips' " {{{
+        let g:UltiSnipsExpandTrigger="<c-k>"
+        let g:UltiSnipsJumpForwardTrigger="<c-k>"
+        let g:UltiSnipsJumpBackwardTrigger="<c-j>"
+    " }}}
+    Plugin 'sjl/gundo.vim' " {{{
+        map <C-z> :GundoToggle<CR>
+    " }}}
+    Plugin 'suan/vim-instant-markdown' " {{{
+        let g:instant_markdown_slow = 1
+    " }}}
     Plugin 'tpope/vim-fugitive'
     Plugin 'tpope/vim-haml'
     Plugin 'tpope/vim-markdown'
@@ -53,13 +89,23 @@
     Plugin 'tpope/vim-rhubarb'
     Plugin 'tpope/vim-sensible'
     Plugin 'tpope/vim-surround'
-    Plugin 'Valloric/YouCompleteMe'
+    Plugin 'Valloric/YouCompleteMe' " {{{
+        let g:ycm_autoclose_preview_window_after_completion=1
+    " }}}
     Plugin 'vim-scripts/matchit.zip'
     Plugin 'vim-scripts/nginx.vim'
     Plugin 'vim-scripts/paredit.vim'
     Plugin 'vim-scripts/wombat256.vim'
     Plugin 'wakatime/vim-wakatime'
-    Plugin 'xolox/vim-easytags'
+    Plugin 'xolox/vim-easytags' " {{{
+        if isdirectory(expand(s:config_dir))
+            let g:easytags_by_filetype = expand(s:config_dir) . '/tags//'
+        endif
+        let g:easytags_updatetime_warn = 0
+        let g:easytags_on_cursorhold = 0
+        let g:easytags_auto_update = 0
+        let b:easytags_auto_highlight = 0
+    " }}}
     Plugin 'xolox/vim-misc'
 
 " }}}
@@ -88,7 +134,6 @@
     set expandtab
 
     set foldmethod=marker
-    set nofoldenable
 
     "remove toolbar
     set guioptions-=T
@@ -111,62 +156,22 @@
     set laststatus=2
 
     " Backup, Swap and Undo files {{{
-    let s:dir = isdirectory(expand('~/Library')) ? '~/Library/Vim' : '~/.local/share/vim'
-    if isdirectory(expand(s:dir))
+    if isdirectory(expand(s:config_dir))
         if &directory =~# '^\.,'
-            let &directory = expand(s:dir) . '/swap//,' . &directory
+            let &directory = expand(s:config_dir) . '/swap//,' . &directory
         endif
         if &backupdir =~# '^\.,'
-            let &backupdir = expand(s:dir) . '/backup//,' . &backupdir
+            let &backupdir = expand(s:config_dir) . '/backup//,' . &backupdir
         endif
         if exists('+undodir') && &undodir =~# '^\.\%(,\|$\)'
-            let &undodir = expand(s:dir) . '/undo//,' . &undodir
+            let &undodir = expand(s:config_dir) . '/undo//,' . &undodir
         endif
     endif
     if exists('+undofile')
         set undofile
     endif
     " }}}
-" }}}
 
-" Plugin Configuration {{{
-    " Instant Markdown
-    let g:instant_markdown_slow = 1
-
-    " Easytags
-    if isdirectory(expand(s:dir))
-        let g:easytags_by_filetype = expand(s:dir) . '/tags//'
-    endif
-    let g:easytags_updatetime_warn = 0
-    let g:easytags_on_cursorhold = 0
-    let g:easytags_auto_update = 0
-    let b:easytags_auto_highlight = 0
-
-    " MakeGreen
-    let g:makegreen_stay_on_file = 1
-
-    " NERDTree
-    let NERDTreeIgnore = ['\.pyc$']
-
-    " Syntastic
-    let g:syntastic_javascript_jslint_conf = ""
-
-    " You Complete Me
-    let g:ycm_autoclose_preview_window_after_completion=1
-
-    " Airline
-    if has("gui_running")
-        let g:airline_powerline_fonts = 1
-    else
-        let g:airline_symbols = {}
-        let g:airline_left_sep = ''
-        let g:airline_right_sep = ''
-        let g:airline_symbols.linenr = '␤'
-        let g:airline_symbols.branch = '⎇'
-        let g:airline_symbols.paste = 'ρ'
-        let g:airline_symbols.whitespace = 'Ξ'
-        let g:airline_symbols.space = ' '
-    endif
 " }}}
 
 " Shortcuts {{{
@@ -184,17 +189,6 @@
     nmap fd :bdelete<CR>
 
     imap <C-Space> <C-X><C-O>
-
-    let g:UltiSnipsExpandTrigger="<c-k>"
-    let g:UltiSnipsJumpForwardTrigger="<c-k>"
-    let g:UltiSnipsJumpBackwardTrigger="<c-j>"
-
-    nmap <leader>c :TagbarToggle<CR>
-    nmap <leader>f :NERDTreeFind<CR>
-    nmap <leader>n :NERDTreeMirror<CR>
-    nmap <leader>p :NERDTreeToggle<CR>
-    nmap <leader>t :CtrlP<CR>
-    map <C-z> :GundoToggle<CR>
 " }}}
 
 " Autocommands {{{
