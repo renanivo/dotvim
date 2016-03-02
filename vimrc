@@ -193,6 +193,5 @@
 
 " Autocommands {{{
     autocmd BufNewFile,BufRead *.py compiler pytest
-    autocmd BufWritePost * if pumvisible() == 0|pclose|endif
     autocmd bufwritepost *vimrc source $MYVIMRC
 " }}}
