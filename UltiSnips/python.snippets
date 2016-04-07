@@ -58,7 +58,7 @@ snippet trytest "Try..Catch to test a exception was not raised" b
 try:
 	${1:code}
 except ${0:Exception} as e:
-	pytest.fail('It should not have raised: {}'.format(e))
+	pytest.fail(u'It should not have raised: {}'.format(e))
 endsnippet
 
 snippet pyfix "Pytest's fixture" b
