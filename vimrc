@@ -193,5 +193,4 @@
 
 " Autocommands {{{
     autocmd BufNewFile,BufRead *.py compiler pytest
-    autocmd bufwritepost *vimrc source $MYVIMRC
 " }}}
