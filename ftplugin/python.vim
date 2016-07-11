@@ -6,4 +6,4 @@ let g:ctrlp_custom_ignore = {
 
 compiler pytest
 
-command! -nargs=* -range=% FixImports :<line1>,<line2>! isort -
+command! -nargs=* -range=% FixImports :<line1>,<line2>! isort <args> -
