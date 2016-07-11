@@ -190,7 +190,3 @@
 
     imap <C-Space> <C-X><C-O>
 " }}}
-
-" Autocommands {{{
-    autocmd BufNewFile,BufRead *.py compiler pytest
-" }}}
