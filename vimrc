@@ -31,8 +31,10 @@
             let g:airline_symbols.space = ' '
         endif
     " }}}
-    Plug 'editorconfig/editorconfig-vim'
-    Plug 'hdima/python-syntax' " {{{
+    Plugin 'editorconfig/editorconfig-vim' " {{{
+        let g:EditorConfig_exec_path = '/usr/local/bin/editorconfig'
+    " }}}
+    Plugin 'hdima/python-syntax' " {{{
         let python_highlight_all = 1
     " }}}
     Plug 'honza/vim-snippets'
