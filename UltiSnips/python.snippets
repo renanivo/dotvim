@@ -27,8 +27,7 @@ class ${1:ClassName}Serializer(serializers.Serializer):
 endsnippet
 
 snippet classpt "Pytest TestCase" b
-class Test${1:ClassName}(object):
-
+class ${1:Test}${2:ClassName}(${3:object}):
 	${0:pass}
 endsnippet
 
@@ -38,7 +37,7 @@ def ${1:function_name}(${2:self}):
 endsnippet
 
 snippet classmeta "Class Meta" b
-class Meta(object):
+class Meta(${1:object}):
 	${0:pass}
 endsnippet
 
