@@ -71,7 +71,9 @@
         let g:syntastic_javascript_jslint_conf = ""
     " }}}
     Plugin 'shawncplus/phpcomplete.vim'
-    Plugin 'shime/vim-livedown'
+    Plugin 'shime/vim-livedown' " {{{
+        let g:livedown_autorun = 1
+    " }}}
     Plugin 'SirVer/ultisnips' " {{{
         let g:UltiSnipsExpandTrigger="<c-k>"
         let g:UltiSnipsJumpForwardTrigger="<c-k>"
