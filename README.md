@@ -3,8 +3,6 @@ dotVIM
 
 My vim configurations
 
-[![Stories in Ready](https://badge.waffle.io/renanivo/dotvim.png)](https://waffle.io/renanivo/dotvim)
-
 ![Screenshot](http://i.imgur.com/ijQ54oX.png?1)
 
 
