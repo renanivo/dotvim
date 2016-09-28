@@ -11,7 +11,7 @@ endif
 
 default: install
 
-install: submodules vundle cache-dirs youcompleteme
+install: submodules vundle cache-dirs youcompleteme instant-rst livedown
 	@echo ""
 	@echo "$(OK_COLOR)dotVIM instalado com sucesso!$(NO_COLOR)"
 	@echo ""
@@ -34,12 +34,11 @@ check-npm:
 nose-compiler:
 	@pip install git+git://github.com/nvie/nose-machineout.git#egg=nose_machineout
 
-instant-markdown: check-npm
-	@sudo gem install redcarpet pygments.rb
-	@npm -g install instant-markdown-d
-
 instant-rst:
 	@pip install https://github.com/Rykka/instant-rst.py/archive/master.zip
+
+livedown: check-npm
+	@npm install -g livedown
 
 youcompleteme:
 	@cd ./bundle/YouCompleteMe; chmod +x install.py; ./install.py --clang-completer

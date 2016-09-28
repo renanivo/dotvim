@@ -71,6 +71,7 @@
         let g:syntastic_javascript_jslint_conf = ""
     " }}}
     Plugin 'shawncplus/phpcomplete.vim'
+    Plugin 'shime/vim-livedown'
     Plugin 'SirVer/ultisnips' " {{{
         let g:UltiSnipsExpandTrigger="<c-k>"
         let g:UltiSnipsJumpForwardTrigger="<c-k>"
@@ -78,9 +79,6 @@
     " }}}
     Plugin 'sjl/gundo.vim' " {{{
         map <C-z> :GundoToggle<CR>
-    " }}}
-    Plugin 'suan/vim-instant-markdown' " {{{
-        let g:instant_markdown_slow = 1
     " }}}
     Plugin 'tpope/vim-fugitive'
     Plugin 'tpope/vim-haml'
