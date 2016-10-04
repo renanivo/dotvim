@@ -2,26 +2,20 @@
     set nocompatible
     filetype off
 
-    set rtp+=~/.vim/bundle/vundle/
-    call vundle#rc()
-
-    Bundle 'gmarik/vundle'
-
     set exrc
     set secure
-
-    set shell=/bin/bash
 
     let s:config_dir = isdirectory(expand('~/Library')) ? '~/Library/Vim' : '~/.local/share/vim'
 " }}}
 
 " Plugins {{{
+    call plug#begin('~/.vim/plugged')
 
-    Plugin '5long/pytest-vim-compiler'
-    Plugin 'airblade/vim-gitgutter'
-    Plugin 'altercation/vim-colors-solarized'
-    Plugin 'beyondwords/vim-twig'
-    Plugin 'bling/vim-airline' " {{{
+    Plug '5long/pytest-vim-compiler'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'altercation/vim-colors-solarized'
+    Plug 'beyondwords/vim-twig'
+    Plug 'bling/vim-airline' " {{{
         if has("gui_running")
             let g:airline_powerline_fonts = 1
         else
@@ -35,68 +29,68 @@
             let g:airline_symbols.space = ' '
         endif
     " }}}
-    Plugin 'editorconfig/editorconfig-vim'
-    Plugin 'hdima/python-syntax' " {{{
+    Plug 'editorconfig/editorconfig-vim'
+    Plug 'hdima/python-syntax' " {{{
         let python_highlight_all = 1
     " }}}
-    Plugin 'honza/vim-snippets'
-    Plugin 'jiangmiao/auto-pairs'
-    Plugin 'jmcantrell/vim-virtualenv'
-    Plugin 'kien/ctrlp.vim' "{{{
+    Plug 'honza/vim-snippets'
+    Plug 'jiangmiao/auto-pairs'
+    Plug 'jmcantrell/vim-virtualenv'
+    Plug 'kien/ctrlp.vim' "{{{
         nmap <leader>t :CtrlP<CR>
     " }}}
-    Plugin 'lambdalisue/nose.vim'
-    Plugin 'majutsushi/tagbar' " {{{
+    Plug 'lambdalisue/nose.vim'
+    Plug 'majutsushi/tagbar' " {{{
         nmap <leader>c :TagbarToggle<CR>
     " }}}
-    Plugin 'mattn/emmet-vim'
-    Plugin 'mattn/gist-vim'
-    Plugin 'mattn/webapi-vim'
-    Plugin 'mileszs/ack.vim'
-    Plugin 'motemen/git-vim'
-    Plugin 'othree/javascript-syntax.vim'
-    Plugin 'renanivo/vim-makegreen' " {{{
+    Plug 'mattn/emmet-vim'
+    Plug 'mattn/gist-vim'
+    Plug 'mattn/webapi-vim'
+    Plug 'mileszs/ack.vim'
+    Plug 'motemen/git-vim'
+    Plug 'othree/javascript-syntax.vim'
+    Plug 'renanivo/vim-makegreen' " {{{
         let g:makegreen_stay_on_file = 1
     " }}}
-    Plugin 'rodjek/vim-puppet'
-    Plugin 'Rykka/InstantRst'
-    Plugin 'scrooloose/nerdtree' " {{{
+    Plug 'rodjek/vim-puppet'
+    Plug 'Rykka/InstantRst'
+    Plug 'scrooloose/nerdtree' " {{{
         let NERDTreeIgnore = ['\.pyc$']
 
         nmap <leader>f :NERDTreeFind<CR>
         nmap <leader>n :NERDTreeMirror<CR>
         nmap <leader>p :NERDTreeToggle<CR>
     " }}}
-    Plugin 'scrooloose/syntastic' " {{{
+    Plug 'scrooloose/syntastic' " {{{
         let g:syntastic_javascript_jslint_conf = ""
     " }}}
-    Plugin 'shawncplus/phpcomplete.vim'
-    Plugin 'shime/vim-livedown' " {{{
+    Plug 'shawncplus/phpcomplete.vim'
+    Plug 'shime/vim-livedown' " {{{
         let g:livedown_autorun = 1
     " }}}
-    Plugin 'SirVer/ultisnips' " {{{
+    Plug 'SirVer/ultisnips' " {{{
         let g:UltiSnipsExpandTrigger="<c-k>"
         let g:UltiSnipsJumpForwardTrigger="<c-k>"
         let g:UltiSnipsJumpBackwardTrigger="<c-j>"
     " }}}
-    Plugin 'sjl/gundo.vim' " {{{
+    Plug 'sjl/gundo.vim' " {{{
         map <C-z> :GundoToggle<CR>
     " }}}
-    Plugin 'tpope/vim-fugitive'
-    Plugin 'tpope/vim-haml'
-    Plugin 'tpope/vim-markdown'
-    Plugin 'tpope/vim-repeat'
-    Plugin 'tpope/vim-rhubarb'
-    Plugin 'tpope/vim-sensible'
-    Plugin 'tpope/vim-surround'
-    Plugin 'Valloric/YouCompleteMe' " {{{
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-haml'
+    Plug 'tpope/vim-markdown'
+    Plug 'tpope/vim-repeat'
+    Plug 'tpope/vim-rhubarb'
+    Plug 'tpope/vim-sensible'
+    Plug 'tpope/vim-surround'
+    Plug 'Valloric/YouCompleteMe' " {{{
         let g:ycm_autoclose_preview_window_after_completion=1
     " }}}
-    Plugin 'vim-scripts/matchit.zip'
-    Plugin 'vim-scripts/nginx.vim'
-    Plugin 'vim-scripts/wombat256.vim'
-    Plugin 'wakatime/vim-wakatime'
-    Plugin 'xolox/vim-easytags' " {{{
+    Plug 'vim-scripts/matchit.zip'
+    Plug 'vim-scripts/nginx.vim'
+    Plug 'vim-scripts/wombat256.vim'
+    Plug 'wakatime/vim-wakatime'
+    Plug 'xolox/vim-easytags' " {{{
         if isdirectory(expand(s:config_dir))
             let g:easytags_by_filetype = expand(s:config_dir) . '/tags//'
         endif
@@ -105,8 +99,9 @@
         let g:easytags_auto_update = 0
         let g:easytags_auto_highlight = 0
     " }}}
-    Plugin 'xolox/vim-misc'
+    Plug 'xolox/vim-misc'
 
+    call plug#end()
 " }}}
 
 " Usability {{{

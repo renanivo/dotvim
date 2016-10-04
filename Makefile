@@ -11,19 +11,16 @@ endif
 
 default: install
 
-install: submodules vundle cache-dirs youcompleteme instant-rst livedown
+install: plug cache-dirs youcompleteme instant-rst livedown
 	@echo ""
 	@echo "$(OK_COLOR)dotVIM instalado com sucesso!$(NO_COLOR)"
 	@echo ""
 
 update: pull submodules vundle
 
-submodules:
-	@git submodule update --init
-	@git submodule sync
-
-vundle:
-	@vim +BundleClean! +BundleInstall! +qa
+plug:
+	@curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	@vim +PlugClean! +PlugInstall! +qa
 
 check-npm:
 	@if ! which npm; then \
@@ -41,7 +38,7 @@ livedown: check-npm
 	@npm install -g livedown
 
 youcompleteme:
-	@cd ./bundle/YouCompleteMe; chmod +x install.py; ./install.py --clang-completer
+	@cd ./plugged/YouCompleteMe; chmod +x install.py; ./install.py --clang-completer
 
 ubuntu:
 	@echo 'let g:ackprg="ack-grep -H --nocolor --nogroup --column"' >> ~/.vimrc
