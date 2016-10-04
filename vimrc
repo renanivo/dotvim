@@ -39,7 +39,6 @@
     Plug 'kien/ctrlp.vim' "{{{
         nmap <leader>t :CtrlP<CR>
     " }}}
-    Plug 'lambdalisue/nose.vim'
     Plug 'majutsushi/tagbar' " {{{
         nmap <leader>c :TagbarToggle<CR>
     " }}}

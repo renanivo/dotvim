@@ -28,11 +28,8 @@ check-npm:
 		exit 1; \
 	fi
 
-nose-compiler:
-	@pip install git+git://github.com/nvie/nose-machineout.git#egg=nose_machineout
-
 instant-rst:
-	@pip install https://github.com/Rykka/instant-rst.py/archive/master.zip
+	@pip install --user https://github.com/Rykka/instant-rst.py/archive/master.zip
 
 livedown: check-npm
 	@npm install -g livedown
