@@ -5,6 +5,8 @@
     set exrc
     set secure
 
+    set shell=/bin/bash
+
     let s:config_dir = isdirectory(expand('~/Library')) ? '~/Library/Vim' : '~/.local/share/vim'
 " }}}
 
