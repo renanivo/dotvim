@@ -36,6 +36,7 @@
         let python_highlight_all = 1
     " }}}
     Plug 'honza/vim-snippets'
+    Plug 'hynek/vim-python-pep8-indent'
     Plug 'jiangmiao/auto-pairs'
     Plug 'jmcantrell/vim-virtualenv'
     Plug 'kien/ctrlp.vim' "{{{
