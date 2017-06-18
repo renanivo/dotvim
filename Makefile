@@ -16,11 +16,14 @@ install: plug cache-dirs youcompleteme instant-rst livedown
 	@echo "$(OK_COLOR)dotVIM instalado com sucesso!$(NO_COLOR)"
 	@echo ""
 
-update: pull submodules vundle
+update: pull plug-update
 
 plug:
 	@curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	@vim +PlugClean! +PlugInstall! +qa
+
+plug-update:
+	@vim +PlugUpdate! +qa
 
 check-npm:
 	@if ! which npm; then \
@@ -59,6 +62,3 @@ cache-clear:
 
 pull:
 	@git pull
-
-upgrade-submodules: update
-	@git submodule foreach 'git checkout master; git pull'
