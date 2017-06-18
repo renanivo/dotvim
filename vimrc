@@ -47,7 +47,6 @@
     Plug 'majutsushi/tagbar' " {{{
         nmap <leader>c :TagbarToggle<CR>
     " }}}
-    Plug 'mattn/emmet-vim'
     Plug 'mattn/gist-vim'
     Plug 'mattn/webapi-vim'
     Plug 'mileszs/ack.vim'
@@ -56,7 +55,6 @@
     Plug 'renanivo/vim-makegreen' " {{{
         let g:makegreen_stay_on_file = 1
     " }}}
-    Plug 'rodjek/vim-puppet'
     Plug 'Rykka/InstantRst'
     Plug 'scrooloose/nerdtree' " {{{
         let NERDTreeIgnore = ['\.pyc$']
@@ -68,7 +66,6 @@
     Plug 'scrooloose/syntastic' " {{{
         let g:syntastic_javascript_jslint_conf = ""
     " }}}
-    Plug 'shawncplus/phpcomplete.vim'
     Plug 'shime/vim-livedown' " {{{
         let g:livedown_autorun = 1
     " }}}
