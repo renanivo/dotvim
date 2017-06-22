@@ -59,6 +59,7 @@ cache-clear:
 	@rm -rf $(CACHE_FOLDER)/swap/*
 	@rm -rf $(CACHE_FOLDER)/undo/*
 	@rm -rf $(CACHE_FOLDER)/tags/*
+	@rm -f ~/.viminfo
 
 pull:
 	@git pull
