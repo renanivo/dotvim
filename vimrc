@@ -31,6 +31,7 @@
             let g:airline_symbols.space = ' '
         endif
     " }}}
+    Plug 'dracula/vim'
     Plug 'editorconfig/editorconfig-vim' " {{{
         let g:EditorConfig_exec_path = '/usr/local/bin/editorconfig'
     " }}}
@@ -67,7 +68,7 @@
         let g:syntastic_javascript_jslint_conf = ""
     " }}}
     Plug 'shime/vim-livedown' " {{{
-        let g:livedown_autorun = 1
+        let g:livedown_autorun = 0
     " }}}
     Plug 'SirVer/ultisnips' " {{{
         let g:UltiSnipsExpandTrigger="<c-k>"
@@ -184,4 +185,5 @@
     nmap fd :bdelete<CR>
 
     imap <C-Space> <C-X><C-O>
+    imap jj <Esc>
 " }}}
