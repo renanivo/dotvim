@@ -52,10 +52,11 @@
     Plug 'mattn/webapi-vim'
     Plug 'mileszs/ack.vim'
     Plug 'motemen/git-vim'
-    Plug 'othree/javascript-syntax.vim'
+    Plug 'pangloss/vim-javascript'
     Plug 'renanivo/vim-makegreen' " {{{
         let g:makegreen_stay_on_file = 1
     " }}}
+    Plug 'Risto-Stevcev/vim-ecmascript6'
     Plug 'Rykka/InstantRst'
     Plug 'scrooloose/nerdtree' " {{{
         let NERDTreeIgnore = ['\.pyc$']
