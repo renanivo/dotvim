@@ -53,6 +53,7 @@
     Plug 'mileszs/ack.vim'
     Plug 'motemen/git-vim'
     Plug 'pangloss/vim-javascript'
+    Plug 'mxw/vim-jsx'
     Plug 'renanivo/vim-makegreen' " {{{
         let g:makegreen_stay_on_file = 1
     " }}}
