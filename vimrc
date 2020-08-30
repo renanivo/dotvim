@@ -16,7 +16,6 @@
     Plug '5long/pytest-vim-compiler'
     Plug 'airblade/vim-gitgutter'
     Plug 'altercation/vim-colors-solarized'
-    Plug 'beyondwords/vim-twig'
     Plug 'bling/vim-airline' " {{{
         if has("gui_running")
             let g:airline_powerline_fonts = 1
@@ -52,8 +51,8 @@
     Plug 'mattn/webapi-vim'
     Plug 'mileszs/ack.vim'
     Plug 'motemen/git-vim'
-    Plug 'pangloss/vim-javascript'
     Plug 'mxw/vim-jsx'
+    Plug 'pangloss/vim-javascript'
     Plug 'renanivo/vim-makegreen' " {{{
         let g:makegreen_stay_on_file = 1
     " }}}
@@ -65,9 +64,6 @@
         nmap <leader>f :NERDTreeFind<CR>
         nmap <leader>n :NERDTreeMirror<CR>
         nmap <leader>p :NERDTreeToggle<CR>
-    " }}}
-    Plug 'scrooloose/syntastic' " {{{
-        let g:syntastic_javascript_jslint_conf = ""
     " }}}
     Plug 'shime/vim-livedown' " {{{
         let g:livedown_autorun = 0
@@ -87,9 +83,6 @@
     Plug 'tpope/vim-rhubarb'
     Plug 'tpope/vim-sensible'
     Plug 'tpope/vim-surround'
-    Plug 'Valloric/YouCompleteMe' " {{{
-        let g:ycm_autoclose_preview_window_after_completion=1
-    " }}}
     Plug 'vim-scripts/matchit.zip'
     Plug 'vim-scripts/nginx.vim'
     Plug 'vim-scripts/wombat256.vim'
@@ -104,6 +97,7 @@
         let g:easytags_auto_highlight = 0
     " }}}
     Plug 'xolox/vim-misc'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
     call plug#end()
 " }}}
@@ -186,6 +180,17 @@
     nmap fl :blast<CR>
     nmap fd :bdelete<CR>
 
-    imap <C-Space> <C-X><C-O>
     imap jj <Esc>
+
+    nmap <silent> [g <Plug>(coc-diagnostic-prev)
+    nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+    " GoTo code navigation.
+    nmap <silent> gd <Plug>(coc-definition)
+    nmap <silent> gy <Plug>(coc-type-definition)
+    nmap <silent> gi <Plug>(coc-implementation)
+    nmap <silent> gr <Plug>(coc-references)
+
+    inoremap <silent><expr> <c-space> coc#refresh()
+    nnoremap <silent> K :call <SID>show_documentation()<CR>
 " }}}

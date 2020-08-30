@@ -11,7 +11,7 @@ endif
 
 default: install
 
-install: plug cache-dirs youcompleteme instant-rst livedown
+install: plug cache-dirs coc instant-rst livedown
 	@echo ""
 	@echo "$(OK_COLOR)dotVIM instalado com sucesso!$(NO_COLOR)"
 	@echo ""
@@ -34,11 +34,11 @@ check-npm:
 instant-rst:
 	@pip install --user https://github.com/Rykka/instant-rst.py/archive/master.zip
 
+coc:
+	@vim -c 'CocInstall -sync coc-python'
+
 livedown: check-npm
 	@npm install -g livedown
-
-youcompleteme:
-	@cd ./plugged/YouCompleteMe; chmod +x install.py; ./install.py --clang-completer
 
 ubuntu:
 	@echo 'let g:ackprg="ack-grep -H --nocolor --nogroup --column"' >> ~/.vimrc
