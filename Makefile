@@ -35,7 +35,7 @@ instant-rst:
 	@pip install --user https://github.com/Rykka/instant-rst.py/archive/master.zip
 
 coc:
-	@vim -c 'CocInstall -sync coc-python'
+	@vim -c 'CocInstall -sync coc-python coc-snippets'
 
 livedown: check-npm
 	@npm install -g livedown
