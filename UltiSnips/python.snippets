@@ -1,28 +1,9 @@
-snippet #c "prints the UTF-8 coding comment" b
-# -*- coding: utf-8 -*-
-endsnippet
-
-snippet #cs "prints simplified UTF-8 coding comment" b
-# coding: utf-8
-endsnippet
-
 snippet from "from x import y" b
 from ${1} import ${0}
 endsnippet
 
 snippet class "The most simple class" b
 class ${1:ClassName}(${2:object}):
-	${0:pass}
-endsnippet
-
-snippet classfd "Django Model Factory Class of factory boy" b
-class ${1:Model}Factory(${2:django.DjangoModelFactory}):
-	class Meta:
-		model = models.$1
-endsnippet
-
-snippet classe "Serializer Class of Rest Framework" b
-class ${1:ClassName}Serializer(serializers.Serializer):
 	${0:pass}
 endsnippet
 
@@ -41,23 +22,11 @@ class Meta(${1:object}):
 	${0:pass}
 endsnippet
 
-snippet djcomm "Django Management Command" b
-from django.core.management.base import BaseCommand, CommandError
-
-
-class Command(BaseCommand):
-	args = '<${1:arg1}>'
-	help = '${2:helptext}'
-
-	def handle(self, *args, **options):
-		${0:pass}
-endsnippet
-
 snippet trytest "Try..Catch to test a exception was not raised" b
 try:
 	${1:code}
 except ${0:Exception} as e:
-	pytest.fail(u'It should not have raised: {}'.format(e))
+	pytest.fail(f'It should not have raised: {e}')
 endsnippet
 
 snippet pyfix "Pytest's fixture" b
