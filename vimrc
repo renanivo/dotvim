@@ -66,9 +66,7 @@
         nmap <leader>n :NERDTreeMirror<CR>
         nmap <leader>p :NERDTreeToggle<CR>
     " }}}
-    Plug 'shime/vim-livedown' " {{{
-        let g:livedown_autorun = 0
-    " }}}
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
     Plug 'SirVer/ultisnips' " {{{
         let g:UltiSnipsExpandTrigger="<c-k>"
         let g:UltiSnipsJumpForwardTrigger="<c-k>"
