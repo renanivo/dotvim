@@ -1,7 +1,7 @@
-set wildignore+=htmlcov,lib,include
+set wildignore+=htmlcov,lib,include,node_modules
 let NERDTreeIgnore+=['^htmlcov$', '^include$']
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '^(htmlcov|include)$',
+  \ 'dir':  'htmlcov\|include\|node_modules',
   \ }
 
 compiler pytest
