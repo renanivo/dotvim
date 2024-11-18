@@ -34,6 +34,7 @@
     Plug 'editorconfig/editorconfig-vim' " {{{
         let g:EditorConfig_exec_path = '/usr/local/bin/editorconfig'
     " }}}
+    Plug 'github/copilot.vim'
     Plug 'hdima/python-syntax' " {{{
         let python_highlight_all = 1
     " }}}
