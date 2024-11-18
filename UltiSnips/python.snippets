@@ -3,12 +3,12 @@ from ${1} import ${0}
 endsnippet
 
 snippet class "The most simple class" b
-class ${1:ClassName}(${2:object}):
+class ${1:ClassName}:
 	${0:pass}
 endsnippet
 
 snippet classpt "Pytest TestCase" b
-class ${1:Test}${2:ClassName}(${3:object}):
+class ${1:Test}${2:ClassName}:
 	${0:pass}
 endsnippet
 
@@ -18,7 +18,7 @@ def ${1:function_name}(${2:self}):
 endsnippet
 
 snippet classmeta "Class Meta" b
-class Meta(${1:object}):
+class Meta:
 	${0:pass}
 endsnippet
 
@@ -26,7 +26,7 @@ snippet trytest "Try..Catch to test a exception was not raised" b
 try:
 	${1:code}
 except ${0:Exception} as e:
-	pytest.fail(f'It should not have raised: {e}')
+	pytest.fail(f"It should not have raised: {e}")
 endsnippet
 
 snippet pyfix "Pytest's fixture" b
