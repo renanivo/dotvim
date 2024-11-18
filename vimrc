@@ -190,6 +190,7 @@
     nmap <silent> gy <Plug>(coc-type-definition)
     nmap <silent> gi <Plug>(coc-implementation)
     nmap <silent> gr <Plug>(coc-references)
+    nmap <silent> gn <Plug>(coc-rename)
 
     inoremap <silent><expr> <c-space> coc#refresh()
     nnoremap <silent> K :call <SID>show_documentation()<CR>
