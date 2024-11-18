@@ -112,7 +112,8 @@
         if !has("gui_running")
             silent! colorscheme wombat256mod
         else
-            set guifont=SourceCodePro+Powerline+Awesome\ Regular:h13
+            set macligatures
+            set guifont=FiraCodeNFM-Reg:h13
             silent! colorscheme solarized
         endif
 
